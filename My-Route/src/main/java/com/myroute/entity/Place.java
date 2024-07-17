@@ -1,5 +1,6 @@
 package com.myroute.entity;
 
+import com.myroute.entity.Enum.PreferenceCategory;
 import jakarta.persistence.*;
 import jdk.jfr.Category;
 import lombok.AllArgsConstructor;
@@ -27,13 +28,13 @@ public class Place {
     @Column(nullable = false)
     private String description;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Schedule schedule;
+    @OneToMany(mappedBy = "place", cascade = CascadeType.ALL)
+    private List<Schedule> schedules;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private City city;
 
     @Enumerated(EnumType.STRING)
-    private Category category;
+    private PreferenceCategory preferenceCategory;
 
 }
