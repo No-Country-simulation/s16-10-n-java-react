@@ -1,6 +1,7 @@
 import { Avatar, IconButton} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+
 const NavBar = () => {
     return (
         <>
@@ -14,6 +15,7 @@ const NavBar = () => {
                         className='text-orange-500 p-4'
                     >
                         <MenuIcon />
+                        
                     </IconButton>
                     <h1 className="font-bold text-base">Nav desde ui</h1>
                     <Avatar className='bg-green-500'>H</Avatar>
