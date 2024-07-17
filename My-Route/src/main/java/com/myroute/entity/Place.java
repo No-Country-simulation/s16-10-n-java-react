@@ -32,6 +32,7 @@ public class Place {
     private List<Schedule> schedules;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
     @Enumerated(EnumType.STRING)

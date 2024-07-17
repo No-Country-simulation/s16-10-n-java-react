@@ -22,6 +22,6 @@ public class City {
     private String country;
 
     @Column(nullable = false)
-    private String city;
+    private String name;
 
 }
