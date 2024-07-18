@@ -8,8 +8,8 @@ export default function Home() {
                 <p className="text-blue-400">Este es un proyecto de turismo</p>
                 <Button
                     variant="contained"
-                    color="primary"
-                    className="bg-orange-500"
+                   
+                    className="bg-primary"
                 >
                     Hola mundo desde MUI
                 </Button>

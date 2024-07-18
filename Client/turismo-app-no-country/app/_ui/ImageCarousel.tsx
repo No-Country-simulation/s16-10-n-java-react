@@ -49,7 +49,7 @@ export const ImageCarousel = () => {
                 style={{
                     backgroundImage: `url(${slides[currentSlide].image})`,
                 }}
-                className="w-full h-full rounded-2xl bg-cover bg-center duration-500 "
+                className="w-full h-full rounded-xl bg-cover bg-center duration-500 "
             ></div>
             <div className="absolute inset-0 flex items-center justify-between p-4">
                 <IconButton
