@@ -1,8 +1,13 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
+import NavBar from './_ui/NavBar';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({
+    subsets: ['latin'],
+    weight: ['100', '300', '400', '500', '700', '900'],
+    variable: '--font-roboto',
+});
 
 export const metadata: Metadata = {
     title: 'My route',
@@ -15,12 +20,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html id='__next' lang="en">
-            <body className={inter.className}>
-                
+        <html id="__next" lang="en">
+            <body className={`${roboto.className} ${roboto.variable}`}>
+                <NavBar />
                 {children}
-                
-                </body>
+            </body>
         </html>
     );
 }
