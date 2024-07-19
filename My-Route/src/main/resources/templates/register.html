@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Registro de Usuario</h1>
-    <form action="/registerUser" method="post">
+    <form action="/users/registerUser" method="post">
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" required /><br /><br />
 
@@ -18,21 +18,28 @@
       <input type="email" id="email" name="email" required /><br /><br />
 
       <label for="rol">Rol:</label>
-      <select id="rol" name="rol">
-        <option value="USER">Usuario</option>
-        <option value="ADMIN">Administrador</option></select
-      ><br /><br />
+      <select id="rol" name="rol" required>
+        <option
+          th:each="rol : ${roles}"
+          th:value="${rol}"
+          th:text="${rol}"
+        ></option>
+      </select>
+      <br /><br />
 
       <label for="preferences">Preferencias:</label>
-      <select id="preferences" name="preferences">
-        <option value="DARK_MODE">Modo Oscuro</option>
-        <option value="LIGHT_MODE">Modo Claro</option>
-        <option value="NO_PREFERENCE">Sin Preferencia</option></select
-      ><br /><br />
+      <select id="preferences" name="preferences" required>
+        <option
+          th:each="preference : ${preferences}"
+          th:value="${preference}"
+          th:text="${preference}"
+        ></option>
+      </select>
+      <br /><br />
 
       <button type="submit">Registrar</button>
     </form>
-    <p th:if="${error}">Error: <span th:text="${error}"></span></p>
-    <p th:if="${exito}">Exito: <span th:text="${exito}"></span></p>
+    <!-- <p th:if="${error}">Error: <span th:text="${error}"></span></p>
+    <p th:if="${exito}">Exito: <span th:text="${exito}"></span></p> -->
   </body>
 </html>

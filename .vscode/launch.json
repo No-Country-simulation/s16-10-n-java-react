@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MyRouteApplication<My-Route>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.myroute.MyRouteApplication",
+      "projectName": "My-Route",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

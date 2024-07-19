@@ -2,13 +2,13 @@ package com.myroute.service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.prefs.Preferences;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.myroute.entity.User;
+import com.myroute.enums.Preferences;
 import com.myroute.enums.Rol_User;
 import com.myroute.repository.UserRepository;
 

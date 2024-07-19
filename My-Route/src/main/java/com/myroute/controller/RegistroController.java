@@ -2,11 +2,11 @@ package com.myroute.controller;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.prefs.Preferences;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.myroute.entity.User;
+import com.myroute.enums.Preferences;
 import com.myroute.enums.Rol_User;
 import com.myroute.service.UserService;
 
@@ -30,14 +31,16 @@ public class RegistroController {
 
     //Registro de usuario
     @GetMapping("/register")
-    public String userRegister() {
+    public String userRegister(Model model) {
 
-        return "register.html";
+        model.addAttribute("roles", Rol_User.values());
+        model.addAttribute("preferences", Preferences.values());
+        return "register";
     }
 
     @PostMapping("/registerUser")
     public String registro(@RequestParam String name, @RequestParam String last_name, 
-    @RequestParam String email, Rol_User rol, Preferences preferences,ModelMap modelo) {
+    @RequestParam String email, @RequestParam Rol_User rol,@RequestParam Preferences preferences,ModelMap modelo) {
 
         try {
 
@@ -45,14 +48,14 @@ public class RegistroController {
 
             modelo.put("exito", "Usuario registrado correctamente!");
 
-            return "home.html";
+            return "users";
         } catch (Exception ex) {
 
             modelo.put("error", ex.getMessage());
             modelo.put("nombre", name);
             modelo.put("email", email);
 
-            return "register.html";
+            return "register";
         }
 
     }
