@@ -4,6 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 const Perfil = () => {
   return (
     <>
+    <div className=" flex justify-center w-full">
       <section className="bg-gray-500 flex flex-col items-center justify-center w-4/6 rounded mt-4">
         <h4>Bienvenido *****!</h4>
         <ul className="list-none font-extralight text-sm p-0 m-0 text-center w-full">
@@ -30,6 +31,7 @@ const Perfil = () => {
           Cerrar sesión
         </button>
       </section>
+    </div>
 
       <section className="w-full flex flex-col items-center justify-center mt-4">
         <h5 className="inline-block m-0 text-sm font-light px-5 bg-gray-600 rounded">
