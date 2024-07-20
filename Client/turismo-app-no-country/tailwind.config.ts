@@ -17,6 +17,16 @@ const config: Config = {
                 'gradient-conic':
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
+            colors: {
+                primary: '#FF8A00',
+                secondary: '#206F1E',
+                apple:'#34D131',
+                turbo: '#FFE500',
+                pureRed: '#FF0000',
+            },
+            fontFamily: {
+                roboto:[ 'var(--font-roboto)']
+            },
         },
     },
     plugins: [],
