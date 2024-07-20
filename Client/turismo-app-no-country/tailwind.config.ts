@@ -19,7 +19,7 @@ const config: Config = {
             },
             colors: {
                 primary: '#FF8A00',
-                secundary: '#206F1E',
+                secondary: '#206F1E',
                 apple:'#34D131',
                 turbo: '#FFE500',
                 pureRed: '#FF0000',
