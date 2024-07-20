@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
-import NavBar from './_ui/NavBar';
+
+import { CssBaseline } from '@mui/material';
+import Header from './_ui/Header';
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -21,8 +23,9 @@ export default function RootLayout({
 }>) {
     return (
         <html id="__next" lang="en">
+            <CssBaseline/>
             <body className={`${roboto.className} ${roboto.variable}`}>
-                <NavBar />
+                <Header />
                 {children}
             </body>
         </html>
