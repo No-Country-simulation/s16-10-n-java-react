@@ -19,10 +19,10 @@ public class RouteReview {
     private Integer reviewRange; // range < 5
     @Column(nullable = false)
     private String comment;
-    /*
+
     @ManyToOne
     @JoinColumn(name = "route_id", nullable = false)
-    private Route route;*/
+    private Route route;
 
 
 

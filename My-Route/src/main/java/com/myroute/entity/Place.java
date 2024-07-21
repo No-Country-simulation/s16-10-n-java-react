@@ -8,7 +8,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -38,4 +40,11 @@ public class Place {
     @Enumerated(EnumType.STRING)
     private PreferenceCategory preferenceCategory;
 
+    @ManyToMany
+    @JoinTable(
+            name = "route_place",
+            joinColumns = @JoinColumn(name = "place_id"),
+            inverseJoinColumns = @JoinColumn(name = "route_id")
+    )
+    private List<Route> routes;
 }
