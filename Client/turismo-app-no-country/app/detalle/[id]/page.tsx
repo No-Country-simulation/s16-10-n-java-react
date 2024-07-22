@@ -1,4 +1,3 @@
-
 'use client'; // Marca este archivo como un "Client Component"
 
 import React, { useEffect, useState } from 'react';
