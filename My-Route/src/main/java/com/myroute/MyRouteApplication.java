@@ -15,7 +15,7 @@ public class MyRouteApplication {
 	class HelloWorldController {
 		@GetMapping("/")
 		public String hello() {
-			return "Backend simulación";
+			return "Backend con entities";
 		}
 	}
 
