@@ -29,6 +29,11 @@
     rgb(var(--background-start-rgb));
 } */
 
+.MySwiper .swiper-button-next , .MySwiper .swiper-button-prev {
+    
+    top: 50%;
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;

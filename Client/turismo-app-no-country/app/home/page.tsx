@@ -13,9 +13,9 @@ const page = () => {
     return (
         <div className="flex flex-col items-center ">
             <IconsButtonsList />
-            <div className="max-w-[1400px] h-[250px] w-full ">
-                <ImageCarousel />
-            </div>
+
+            <ImageCarousel />
+
             {routesSuggestions.map((route) => (
                 <RouteCardContainer key={route} title={route} />
             ))}
