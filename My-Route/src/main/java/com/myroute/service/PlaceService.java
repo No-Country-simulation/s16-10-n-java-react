@@ -32,4 +32,8 @@ public class PlaceService {
     public  List<Place> getPlacesByPreferenceCategory(PreferenceCategory preferenceCategory){
         return placeRepository.findByPreferenceCategory(preferenceCategory);
     }
+
+    public Place createPlace(Place place) {
+        return placeRepository.save(place);
+    }
 }
