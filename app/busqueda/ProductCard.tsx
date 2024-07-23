@@ -53,13 +53,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <p className="mt-1 text-sm text-gray-500">{product.color}</p>
         </div>
         <p className="text-sm font-medium text-gray-900">{product.price}</p>
-        <p>{product.coordinates}</p>
+       
       </div>
       <button
         className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
         onClick={handleViewDetails}
       >
-        Ver Detalles
+        Ver los Detalles
       </button>
     </div>
   );
