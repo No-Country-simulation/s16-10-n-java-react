@@ -16,7 +16,7 @@ public class RouteController {
     private RouteService routeService;
 
     @GetMapping
-    public List<Route> getAllRoutes () {
+    public List<Route> getAllRoutes() {
         return routeService.getAllRoutes();
     }
 
@@ -36,7 +36,8 @@ public class RouteController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteRoute(@PathVariable Long id) {
-        routeService.deleteRoute(id);
+    public Route deleteRoute(@PathVariable Long id) {
+        return routeService.deleteRoute(id);
     }
+
 }
