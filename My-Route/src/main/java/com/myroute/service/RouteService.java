@@ -31,12 +31,14 @@ public class RouteService {
         route.setRouteName(routeDetails.getRouteName());
         route.setRouteType(routeDetails.getRouteType());
         route.setDescription(routeDetails.getDescription());
+        route.setIsActive(routeDetails.getIsActive());
         return routeRepository.save(route);
     }
 
-    public void deleteRoute(Long id) {
-        Route route = routeRepository.findById(id).orElseThrow(() -> new RuntimeException("Continente not found"));
-        routeRepository.delete(route);
+    public Route deleteRoute(Long id) {
+        Route route = routeRepository.findById(id).orElseThrow(() -> new RuntimeException("Route not found"));
+        route.setIsActive(false);
+        return routeRepository.save(route);
     }
 
 }
