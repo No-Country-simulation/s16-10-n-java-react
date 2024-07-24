@@ -1,11 +1,5 @@
-# Stage 1: Build the application
-FROM maven:3.8.5-eclipse-temurin-17 AS build
+FROM openjdk:17-alpine
+COPY target/My-Route-0.0.1-SNAPSHOT.jar app.jar
 
-# Stage 2: Run the application
-#FROM eclipse-temurin:17-jre
-
-# Copy the JAR file from the build stage
-COPY /target/My-Route-0.0.1-SNAPSHOT.jar app.jar
-
-# Command to run the application
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]

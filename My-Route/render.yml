@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: MyRoute
+    env: java
+    buildCommand: ./mvnw package -DskipTests
+    startCommand: java -jar target/My-Route-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: PORT
+        value: 8080

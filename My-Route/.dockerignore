@@ -1,0 +1,8 @@
+.env
+# Ignorar otros archivos y directorios excepto el archivo JAR
+*.log
+*.tmp
+.idea/
+.vscode/
+
+!target/My-Route-0.0.1-SNAPSHOT.jar
