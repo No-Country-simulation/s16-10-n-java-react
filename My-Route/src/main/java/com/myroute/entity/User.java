@@ -22,8 +22,9 @@ public class User {
     private Long id;
 
     private String name;
-    private String last_name;
+    private String last_name;//cambiar nombre atributo 
     private String email;
+    private Boolean activo; // pasar a la tabla y logica
 
     @Enumerated(EnumType.STRING)
     private Preferences preferences;
