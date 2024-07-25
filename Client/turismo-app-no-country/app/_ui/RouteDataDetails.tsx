@@ -7,7 +7,7 @@ import MapIcon from '@mui/icons-material/Map';
 export const RouteDataDetails = () => {
     return (
         <div className="flex flex-col items-center bg-derby rounded-xl w-full min-w-[215px] p-3">
-            <h2 className="font-normal text-sm rounded-lg bg-slate-300 py-2 px-9 my-1">
+            <h2 className="font-normal text-sm rounded-lg bg-slate-300 py-2 px-9 my-1 ">
                 Datos de la ruta
             </h2>
             <dl className=" my-1">

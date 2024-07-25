@@ -1,5 +1,6 @@
 import { ImageCarousel } from '@/app/_ui/ImageCarousel';
 import { RouteDataDetails } from '@/app/_ui/RouteDataDetails';
+import { RouteTimeLine } from '@/app/_ui/RouteTimeLine';
 import StarIcon from '@mui/icons-material/Star';
 
 const page = async ({ params }: { params: { routeid: string } }) => {
@@ -26,8 +27,8 @@ const page = async ({ params }: { params: { routeid: string } }) => {
                         eius impedit itaque sunt sed delectus velit.
                     </p>
                     <div className="flex justify-start items-center gap-x-5 w-full">
-                        <RouteDataDetails/>
-                        <div className="bg-slate-500 rounded-xl h-80 w-full"></div>
+                        <RouteDataDetails />
+                        <RouteTimeLine />
                     </div>
                 </div>
             </div>
