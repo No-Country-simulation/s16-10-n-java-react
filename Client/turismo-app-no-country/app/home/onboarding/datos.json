@@ -1,0 +1,80 @@
+[
+  [
+    {
+      "id": 1,
+      "title": "Aventura y actividad al aire libre",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option1"
+    },
+    {
+      "id": 2,
+      "title": "Cultura e historia",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option2"
+    },
+    {
+      "id": 3,
+      "title": "Relajación y bienestar",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option3"
+    },
+    {
+      "id": 4,
+      "title": "Gastronomía y vida nocturna",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option4"
+    }
+  ],
+  [
+    {
+      "id": 5,
+      "title": "Descubrir lugares escondidos y menos turísticos",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option5"
+    },
+    {
+      "id": 6,
+      "title": "Participar en eventos y festivales locales",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option6"
+    },
+    {
+      "id": 7,
+      "title": "Conectar con la cultura local y sus habitantes",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option7"
+    },
+    {
+      "id": 8,
+      "title": "Relajar y desconectar del estrés diario",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option8"
+    }
+  ],
+  [
+    {
+      "id": 9,
+      "title": "Pueblos autóctonos",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option9"
+    },
+    {
+      "id": 10,
+      "title": "Ciudades cosmopolitanas",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option10"
+    },
+    {
+      "id": 11,
+      "title": "Espacios rodeados de naturaleza",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option11"
+    },
+    {
+      "id": 12,
+      "title": "Una combinación de todos",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option12"
+    }
+  ]
+]
