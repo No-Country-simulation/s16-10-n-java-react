@@ -1,6 +1,7 @@
 import { Avatar } from '@mui/material';
 import Link from 'next/link';
 import { MobileNav } from './MobileNav';
+import SearchNav from '../busqueda/SearchNav';
 
 const headerNavLinks = [
     {
@@ -42,8 +43,9 @@ const Header = () => {
                                 {link.title}
                             </Link>
                         ))}
+                        <SearchNav/>
                     </div>
-
+                   
                     <Avatar className="bg-secondary">H</Avatar>
                 </div>
             </nav>
