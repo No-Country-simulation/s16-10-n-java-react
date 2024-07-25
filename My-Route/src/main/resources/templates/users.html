@@ -14,6 +14,7 @@
           <th>Nombre</th>
           <th>Apellido</th>
           <th>Email</th>
+          <th>Estado</th>
           <th>Rol</th>
           <th>Preferencias</th>
         </tr>
@@ -22,8 +23,9 @@
         <tr th:each="user : ${users}">
           <td th:text="${user.id}"></td>
           <td th:text="${user.name}"></td>
-          <td th:text="${user.last_name}"></td>
+          <td th:text="${user.lastName}"></td>
           <td th:text="${user.email}"></td>
+          <td th:text="${user.isActive}"></td>
           <td th:text="${user.rol}"></td>
           <td th:text="${user.preferences}"></td>
         </tr>

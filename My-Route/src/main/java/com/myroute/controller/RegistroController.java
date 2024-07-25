@@ -39,12 +39,13 @@ public class RegistroController {
     }
 
     @PostMapping("/registerUser")
-    public String registro(@RequestParam String name, @RequestParam String last_name, 
-    @RequestParam String email, @RequestParam Rol_User rol,@RequestParam Preferences preferences,ModelMap modelo) {
+    public String registro(@RequestParam String name, @RequestParam String lastName, 
+    @RequestParam String email, Boolean isActive, @RequestParam Rol_User rol,@RequestParam List<Preferences> preferences,ModelMap modelo) {
 
         try {
 
-            userService.userRegister(name, last_name, email, rol, preferences);
+            userService.userRegister(name, lastName, email, isActive, rol, preferences);
+            
 
             modelo.put("exito", "Usuario registrado correctamente!");
 
@@ -61,9 +62,11 @@ public class RegistroController {
     }
 
     //MUESTRA LA LISTA DE USUARIOS
-    @GetMapping
-    public List<User> getAllUsers() {
-        return userService.findAll();
+    @GetMapping("/listUsers")
+    public String listUsers(Model model) {
+        List<User> users = userService.findAll();
+        model.addAttribute("users", users);
+        return "users"; 
     }
 
     //BUSCA AL USUARIO POR ID
@@ -80,8 +83,9 @@ public class RegistroController {
         if (user.isPresent()) {
             User updatedUser = user.get();
             updatedUser.setName(userDetails.getName());
-            updatedUser.setLast_name(userDetails.getLast_name());
+            updatedUser.setLastName(userDetails.getLastName());
             updatedUser.setEmail(userDetails.getEmail());
+            updatedUser.setIsActive(userDetails.getIsActive());
             updatedUser.setPreferences(userDetails.getPreferences());
             updatedUser.setRol(userDetails.getRol());
             userService.save(updatedUser);

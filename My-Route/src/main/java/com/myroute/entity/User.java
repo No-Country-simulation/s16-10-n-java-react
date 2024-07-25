@@ -1,14 +1,21 @@
 package com.myroute.entity;
 
+import java.util.List;
+
 import com.myroute.enums.Preferences;
 import com.myroute.enums.Rol_User;
 
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,14 +29,19 @@ public class User {
     private Long id;
 
     private String name;
-    private String last_name;//cambiar nombre atributo 
+    private String lastName;
     private String email;
-    private Boolean activo; // pasar a la tabla y logica
+    private Boolean isActive; // inicia en verdadero, simboliza la baja o el alta del usuario
 
+    @ElementCollection(targetClass = Preferences.class, fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
-    private Preferences preferences;
+    @CollectionTable(name = "user_preferences", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "preference")
+    private List<Preferences> preferences;
 
     @Enumerated(EnumType.STRING)
     private Rol_User rol;
+
+ 
 
 }
