@@ -1,5 +1,6 @@
 package com.myroute.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.myroute.entity.Enum.PreferenceCategory;
 import jakarta.persistence.*;
 import jdk.jfr.Category;
@@ -17,6 +18,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "places")
 
 public class Place {
 
@@ -34,7 +36,8 @@ public class Place {
     private List<Schedule> schedules;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id", nullable = false)
+    @JoinColumn(name = "city_id")
+    @JsonIgnore
     private City city;
 
     @Enumerated(EnumType.STRING)
