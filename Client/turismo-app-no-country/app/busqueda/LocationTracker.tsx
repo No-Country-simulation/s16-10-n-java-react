@@ -4,23 +4,40 @@ import React, { useState, useEffect } from 'react';
 const LocationTracker: React.FC = () => {
   const [position, setPosition] = useState<GeolocationPosition | null>(null);
   const [error, setError] = useState<GeolocationPositionError | null>(null);
+  const [tracking, setTracking] = useState(false);
 
   useEffect(() => {
-    // Verificar si el navegador soporta la API de geolocalización
-    if (navigator.geolocation) {
-      // Solicitar la ubicación del usuario
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          setPosition(pos);
-        },
-        (err) => {
-          setError(err);
-        }
-      );
-    } else {
-      setError({ code: 0, message: 'Geolocation is not supported by this browser.' });
+    let watchId: number | null = null;
+
+    if (tracking) {
+      if (navigator.geolocation) {
+        watchId = navigator.geolocation.watchPosition(
+          (pos) => {
+            setPosition(pos);
+          },
+          (err) => {
+            setError(err);
+          },
+          { enableHighAccuracy: true }
+        );
+      } else {
+        setError({
+          code: 0,
+          message: 'Geolocation is not supported by this browser.'
+        });
+      }
     }
-  }, []);
+
+    return () => {
+      if (watchId !== null) {
+        navigator.geolocation.clearWatch(watchId);
+      }
+    };
+  }, [tracking]);
+
+  const handleTrackLocation = () => {
+    setTracking(true);
+  };
 
   const renderPosition = () => {
     if (position) {
@@ -51,6 +68,13 @@ const LocationTracker: React.FC = () => {
       <h2 className="text-lg font-bold mb-4">Ubicación del Usuario</h2>
       {renderPosition()}
       {renderError()}
+      <button
+        onClick={handleTrackLocation}
+        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        disabled={tracking}
+      >
+        {tracking ? 'Tracking...' : 'Track Location'}
+      </button>
     </div>
   );
 };

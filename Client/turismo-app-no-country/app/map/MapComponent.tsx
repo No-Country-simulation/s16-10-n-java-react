@@ -50,7 +50,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ coordinates }) => {
 
         // Dibujar la ruta si hay más de un punto
         if (coordinates.length > 1) {
-            L.Routing.control({
+            const control = L.Routing.control({
                 waypoints: coordinates.map(([lat, lng]) => L.latLng(lat, lng)),
                 lineOptions: {
                     styles: [{ color: '#FF5722', weight: 6 }] // Cambia el color y peso para mejorar la visibilidad
@@ -61,6 +61,23 @@ const MapComponent: React.FC<MapComponentProps> = ({ coordinates }) => {
                 geocoder: null, // Evita mostrar el geocodificador
                 show: false // Oculta la información de la ruta
             }).addTo(mapInstanceRef.current);
+
+            // Eliminar el contenedor de rutas después de que se genere
+            control.on('routesfound', () => {
+                const routingContainer = document.querySelector('.leaflet-routing-container');
+                if (routingContainer) {
+                    routingContainer.style.display = 'none';
+                }
+            });
+
+            // También se puede intentar usar un selector CSS para ocultar el contenedor
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .leaflet-routing-container {
+                    display: none !important;
+                }
+            `;
+            document.head.appendChild(style);
         }
     }, [coordinates]);
 
