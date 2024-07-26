@@ -73,111 +73,75 @@
     },
     {
       "id": 7,
-      "name": "Cascada de la Alegría",
+      "name": "Puente de la Mujer",
       "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/733865/pexels-photo-733865.jpeg",
-      "imageAlt": "Cascada en el Parque Natural.",
+      "imageSrc": "https://elojodelarte.com/media/k2/items/cache/ef76ec555f88001101e0e225c3aa91e9_XL.webp?t=20240227_051345",
+      "imageAlt": "Puente de la Mujer.",
       "reach": "10k",
       "price": "Entrada gratuita",
       "tiempo": "Ideal",
-      "coordinates": [-66.5900, -58.4000],
-      "address": "Av. de los Lagos 3000, CABA"
+      "coordinates": [-34.607939, -58.364911],
+      "address": "xxxxxx"
     },
     {
       "id": 8,
-      "name": "Zona Arqueológica",
+      "name": "Calle Museo Caminito",
       "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/1625246/pexels-photo-1625246.jpeg",
-      "imageAlt": "Ruinas en la Zona Arqueológica.",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/artes-plasticas-la-boca-colores-1500x610.jpg",
+      "imageAlt": "Caminito",
       "reach": "10k",
       "price": "$12",
       "tiempo": "Ideal",
-      "coordinates": [-9.6031, -58.3813],
-      "address": "Av. Belgrano 890, CABA"
+      "coordinates": [-34.6393, -58.3628],
+      "address": "xxxxx"
     },
     {
       "id": 9,
-      "name": "Plaza Mayor",
+      "name": "Obelisco",
       "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/1704125/pexels-photo-1704125.jpeg",
-      "imageAlt": "Actividades en la Plaza Mayor.",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/obelisco_ba_verde_1200.jpg",
+      "imageAlt": "Obelisco.",
       "reach": "10k",
       "price": "Entrada gratuita",
       "tiempo": "Ideal",
-      "coordinates": [-46.6033, -58.3816],
-      "address": "Plaza de Mayo, CABA"
+      "coordinates": [-34.60376, -58.38162],
+      "address": "xxxxx"
     },
     {
       "id": 10,
-      "name": "Mirador del Cielo",
+      "name": "Rosedal de Palermo",
       "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/1600790/pexels-photo-1600790.jpeg",
-      "imageAlt": "Vista panorámica desde el mirador.",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/rosedal_palermo_1200_puente.jpg",
+      "imageAlt": "Rosedal de Palermo.",
       "reach": "10k",
       "price": "$8",
       "tiempo": "Ideal",
-      "coordinates": [-13.6100, -58.3840],
-      "address": "Mirador Buenos Aires, CABA"
+      "coordinates": [-34.570633, -58.417287],
+      "address": "xxxxxxxxxxxxx"
     },
     {
       "id": 11,
-      "name": "Parque de Atracciones",
+      "name": "Planetario Galileo Galilei",
       "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/1588606/pexels-photo-1588606.jpeg",
-      "imageAlt": "Diversión en el Parque de Atracciones.",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/planetario_noche_1200_1.jpg",
+      "imageAlt": "Planetario Galileo Galilei.",
       "reach": "10k",
       "price": "$30",
       "tiempo": "Ideal",
-      "coordinates": [-42.6150, -58.3800],
-      "address": "Av. Rivadavia 1234, CABA"
+      "coordinates": [-34.569722222222, -58.411666666667],
+      "address": "xxxxxxxxxxxxxxxxxxxx"
     },
     {
       "id": 12,
-      "name": "Bosque Encantado",
+      "name": "Cementerio de la Recoleta",
       "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/1603074/pexels-photo-1603074.jpeg",
-      "imageAlt": "Senderos en el Bosque Encantado.",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/cementerio-recoleta-pasillo-interno-1500x610-nn_0.jpg",
+      "imageAlt": "Cementerio de la Recoleta.",
       "reach": "10k",
       "price": "Entrada gratuita",
       "tiempo": "Ideal",
-      "coordinates": [-19.6055, -58.3790],
-      "address": "Bosque de Palermo, CABA"
-    },
-    {
-      "id": 13,
-      "name": "Acantilados del Océano",
-      "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/2863534/pexels-photo-2863534.jpeg",
-      "imageAlt": "Acantilados sobre el océano.",
-      "reach": "10k",
-      "price": "$10",
-      "tiempo": "Ideal",
-      "coordinates": [-59.6050, -58.3860],
-      "address": "Av. Costanera Sur 2500, CABA"
-    },
-    {
-      "id": 14,
-      "name": "Parque de los Dinosaurios",
-      "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/1373604/pexels-photo-1373604.jpeg",
-      "imageAlt": "Réplicas de dinosaurios en el parque.",
-      "reach": "10k",
-      "price": "$15",
-      "tiempo": "Ideal",
-      "coordinates": [-98.6010, -58.3850],
-      "address": "Av. Parque 1000, CABA"
-    },
-    {
-      "id": 15,
-      "name": "Estadio Municipal",
-      "Temporada": "#",
-      "imageSrc": "https://images.pexels.com/photos/2062560/pexels-photo-2062560.jpeg",
-      "imageAlt": "Eventos deportivos en el Estadio Municipal.",
-      "reach": "10k",
-      "price": "$20",
-      "tiempo": "Ideal",
-      "coordinates": [-10.6100, -58.3770],
-      "address": "Estadio Municipal, CABA"
+      "coordinates": [-34.588055555556, -58.393055555556],
+      "address": "xxxxxxxxxxxxxxx"
     }
   ]
   
