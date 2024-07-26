@@ -114,6 +114,7 @@ const SearchPage: React.FC = () => {
               >
                 Close
               </button>
+              
             </div>
           </div>
         )}
