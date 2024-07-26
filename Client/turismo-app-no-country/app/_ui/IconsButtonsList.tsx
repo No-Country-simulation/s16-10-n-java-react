@@ -34,7 +34,9 @@ export const IconsButtonsList = () => {
     return (
         <div className="flex m-3 justify-evenly w-full max-w-[1400px] ">
             {iconList.map((element: any) => (
-                <IconButtonComponent key={element.id}>{element.children}</IconButtonComponent>
+                <IconButtonComponent key={element.id}>
+                    {element.children}
+                </IconButtonComponent>
             ))}
         </div>
     );
