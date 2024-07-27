@@ -6,8 +6,8 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
-    --swiper-navigation-color: #FF8A00;
-    --swiper-pagination-color: #206F1E;
+    --swiper-navigation-color: #ff8a00;
+    --swiper-pagination-color: #206f1e;
     --swiper-navigation-top-offset: 47%;
 }
 
@@ -29,8 +29,23 @@
     rgb(var(--background-start-rgb));
 } */
 
+.MySwiper .swiper-button-next,
+.MySwiper .swiper-button-prev {
+    top: 50%;
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
+}
+
+.my-icon {
+    width: 0px;
+	height: 0px;
+	border-top: solid 30px #206F1E;
+	border-right: solid 20px transparent;
+	border-bottom: solid 0px transparent;
+	border-left: solid 20px transparent;
+	border-radius: 100%;
 }

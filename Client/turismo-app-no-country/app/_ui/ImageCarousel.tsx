@@ -1,8 +1,11 @@
 'use client';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { IconButton } from '@mui/material';
-import { useState } from 'react';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
 
 const slides = [
     {
@@ -33,46 +36,25 @@ const slides = [
 ];
 
 export const ImageCarousel = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    const nextSlide = () => {
-        setCurrentSlide((currentSlide + 1) % slides.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
-    };
-
     return (
-        <div className="w-full h-full m-auto relative p-2">
-            <div
-                style={{
-                    backgroundImage: `url(${slides[currentSlide].image})`,
-                }}
-                className="w-full h-full rounded-xl bg-cover bg-center duration-500 "
-            ></div>
-            <div className="absolute inset-0 flex items-center justify-between p-4">
-                <IconButton
-                    onClick={prevSlide}
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    className="text-orange-500 m-0"
+        <>
+            <div className="max-w-[1400px] h-full w-full ">
+                <Swiper
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="MySwiper"
                 >
-                    <ArrowBackIosIcon />
-                </IconButton>
-                <IconButton
-                    onClick={nextSlide}
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    className="text-orange-500 m-0"
-                >
-                    <ArrowForwardIosIcon />
-                </IconButton>
+                    {slides.map((slide) => (
+                        <SwiperSlide key={slide.id}>
+                            <img
+                                src={slide.image}
+                                alt="image"
+                                className="w-full sm:h-60 h-40 object-cover rounded-xl"
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
-        </div>
+        </>
     );
 };
