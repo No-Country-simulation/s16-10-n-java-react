@@ -1,9 +1,10 @@
 package com.myroute.service;
 
+import com.myroute.dto.PlaceDto;
 import com.myroute.entity.Enum.PreferenceCategory;
 import com.myroute.entity.Place;
 import com.myroute.repository.PlaceRepository;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class PlaceService {
 
     @Autowired
@@ -33,7 +34,22 @@ public class PlaceService {
         return placeRepository.findByPreferenceCategory(preferenceCategory);
     }
 
-    public Place createPlace(Place place) {
+    public Place createPlace(PlaceDto placeDto) {
+        Place place = new Place();
+        place.setName(placeDto.getName());
+        place.setDescription(placeDto.getDescription());
+        place.setPreferenceCategory(placeDto.getPreferenceCategory());
+        place.setLatitude(placeDto.getLatitude());
+        place.setLongitude(placeDto.getLongitude());
+        place.setImageSrc(placeDto.getImageSrc());
+        place.setImageAlt(placeDto.getImageAlt());
+        place.setReach(placeDto.getReach());
+        place.setPrice(placeDto.getPrice());
+        place.setWeather(placeDto.getWeather());
+        place.setAddress(placeDto.getAddress());
+        place.setTemporada(placeDto.getTemporada());
+
         return placeRepository.save(place);
     }
+
 }

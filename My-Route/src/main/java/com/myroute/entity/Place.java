@@ -18,7 +18,6 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "places")
 
 public class Place {
 
@@ -29,16 +28,11 @@ public class Place {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
+    @Column
     private String description;
 
     @OneToMany(mappedBy = "place", cascade = CascadeType.ALL)
     private List<Schedule> schedules;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id")
-    @JsonIgnore
-    private City city;
 
     @Enumerated(EnumType.STRING)
     private PreferenceCategory preferenceCategory;
@@ -50,4 +44,31 @@ public class Place {
             inverseJoinColumns = @JoinColumn(name = "route_id")
     )
     private List<Route> routes;
+
+    @Column
+    private String imageSrc;
+
+    @Column
+    private  String imageAlt;
+
+    @Column
+    private String reach;
+
+    @Column
+    private String price;
+
+    @Column
+    private String weather;
+
+    @Column
+    private String address;
+
+    @Column
+    private Double latitude;
+
+    @Column
+    private Double longitude;
+
+    @Column
+    private String temporada;
 }
