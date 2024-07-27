@@ -23,6 +23,8 @@ const config: Config = {
                 apple:'#34D131',
                 turbo: '#FFE500',
                 pureRed: '#FF0000',
+                derby: '#FFEDD7',
+                yellowOrange: '#FFA944',
             },
             fontFamily: {
                 roboto:[ 'var(--font-roboto)']
