@@ -28,10 +28,10 @@ const page = () => {
   const { step } = useFormState();
 
   return (
-    <section className="h-screen flex justify-center items-center font-roboto">
+    <section className="min-h-screen flex justify-center items-center font-roboto max-w-[1040px] mx-auto">
       {step !== 3 ? (
-        <div className=" bg-[url('/bg-secondary-onboarding.svg')] bg-no-repeat bg-cover w-5/6 rounded-xl min-h-[590px] flex items-center justify-center relative">
-          <div className="bg-[url('/bg-onboarding.svg')] bg-no-repeat bg-cover w-full rounded-xl">
+        <div className=" bg-[url('/bg-secondary-onboarding.svg')] bg-no-repeat bg-cover w-5/6 rounded-xl min-h-[590px] relative">
+          <div className="bg-[url('/bg-onboarding.svg')] bg-no-repeat bg-cover w-full min-h-[590px] rounded-xl flex items-center justify-center ">
             <ActiveStepFormComponent />
           </div>
             <ProgressIdentifier />

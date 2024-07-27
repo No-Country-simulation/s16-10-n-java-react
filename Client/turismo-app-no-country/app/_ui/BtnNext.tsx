@@ -17,7 +17,7 @@ const BtnNext = () => {
         <Button
           sx={{ textTransform: "none" }}
           type="submit"
-          className="py-3 px-5 rounded border-none text-white bg-primary text-xs"
+          className="py-3 px-5 rounded border-none text-white bg-primary text-xs lg:text-sm"
         >
           Siguiente
         </Button>
@@ -26,7 +26,7 @@ const BtnNext = () => {
           sx={{ textTransform: "none" }}
           onClick={handleRedirect}
           type="submit"
-          className="py-3 px-5 rounded border-none text-white bg-primary text-xs"
+          className="py-3 px-5 rounded border-none text-white bg-primary text-xs lg:text-sm"
         >
           Finalizar
         </Button>

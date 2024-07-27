@@ -26,12 +26,18 @@ const FormOnboarding: React.FC<FormOnboardingProps> = ({ title }) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="h-full flex flex-col items-center gap-6 text-xs pt-8 pb-4"
+      className="h-full flex flex-col justify-center items-center gap-6 sm:gap-10 lg:gap-12 text-xs pt-8 pb-4"
     >
-      <h3 className="m-0 text-base font-bold text-center w-11/12">{title}</h3>
-      {datos[step] &&
-        datos[step].map((card) => <CardOnboarding register={register} card={card} key={card.id} />)}
-      {<BtnSiguiente />}
+      <h1 className="m-0 text-base font-bold text-center w-11/12 sm:text-lg lg:text-xl">
+        {title}
+      </h1>
+      <div className="flex flex-wrap justify-center gap-7 lg:gap-12 max-w-[375px] lg:max-w-[1024px]">
+        {datos[step] &&
+          datos[step].map((card) => (
+            <CardOnboarding register={register} card={card} key={card.id} />
+          ))}
+      </div>
+      <BtnSiguiente />
     </form>
   );
 };
