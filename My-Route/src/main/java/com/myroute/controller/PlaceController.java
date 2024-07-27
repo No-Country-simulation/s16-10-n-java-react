@@ -1,5 +1,6 @@
 package com.myroute.controller;
 
+import com.myroute.dto.PlaceDto;
 import com.myroute.entity.Enum.PreferenceCategory;
 import com.myroute.entity.Place;
 import com.myroute.service.PlaceService;
@@ -63,7 +64,12 @@ public class PlaceController {
     }
 
     @PostMapping
-    public Place createPlace(@RequestBody Place place) {
-        return placeService.createPlace(place);
+    public ResponseEntity<?> createPlace(@RequestBody PlaceDto placeDto) {
+        try {
+            Place place =  placeService.createPlace(placeDto);
+            return ResponseEntity.status(HttpStatus.CREATED).body(place);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error " + e.getMessage());
+        }
     }
 }
