@@ -1,6 +1,9 @@
 import { ImageCarousel } from '@/app/_ui/ImageCarousel';
 import { RouteDataDetails } from '@/app/_ui/RouteDataDetails';
 import { RouteTimeLine } from '@/app/_ui/RouteTimeLine';
+import Map from '@/app/map';
+import MapComponent from '@/app/map/MapComponent';
+// import { MapComponentReact } from '@/app/map/MapComponentReact';
 import StarIcon from '@mui/icons-material/Star';
 
 const page = async ({ params }: { params: { routeid: string } }) => {
@@ -8,8 +11,8 @@ const page = async ({ params }: { params: { routeid: string } }) => {
 
     return (
         <>
-            <div className="flex flex-col items-center">
-                <div className="flex flex-col items-center w-full max-w-[1400px] px-7">
+            <div className="flex flex-col items-center h-screen">
+                <div className="flex flex-col items-center w-full max-w-[1400px] h-full px-7">
                     <div className="flex justify-start items-center gap-3 w-full">
                         <h1 className="font-semibold text-base">
                             Titulo de la ruta{` ${routeid}`}
@@ -26,10 +29,15 @@ const page = async ({ params }: { params: { routeid: string } }) => {
                         in sit corporis laudantium impedit rem quidem. Porro ab,
                         eius impedit itaque sunt sed delectus velit.
                     </p>
-                    <div className="flex justify-start items-center gap-x-5 w-full">
-                        <RouteDataDetails />
+                    <div className="flex justify-start items-center gap-x-5 w-full h-full p-3">
+                        <div className="flex flex-col gap-y-4">
+                            <RouteDataDetails />
+                            <Map />
+                        </div>
                         <RouteTimeLine />
                     </div>
+                    {/* <MapComponent coordinates={[11, 23]}/> */}
+                    {/* <MapComponentReact/> */}
                 </div>
             </div>
         </>

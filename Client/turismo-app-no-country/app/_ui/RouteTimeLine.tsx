@@ -24,7 +24,7 @@ const RouteTimeLineItems = [
 export const RouteTimeLine = () => {
     return (
         <>
-            <div className="flex flex-col items-center bg-derby rounded-xl w-full min-w-[215px]  p-3">
+            <div className="flex flex-col items-center justify-center bg-derby rounded-xl w-full min-w-[215px] h-full min-h-[700px] p-3">
                 <div className=" border-0 border-l-8 border-secondary border-solid">
                     <ul className="flex flex-col list-none gap-y-12">
                         {RouteTimeLineItems.map((item) => (
