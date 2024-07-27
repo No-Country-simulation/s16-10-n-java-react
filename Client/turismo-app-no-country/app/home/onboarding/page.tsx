@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState } from "../../_ui/FormContext";
+import { useFormState } from "./FormOnboardingContext";
 import ExperienciasBuscadas from "../../_ui/ExperiencesSought";
 import LugaresPreferidos from "../../_ui/FavoritePlaces";
 import EstilosDeViaje from "../../_ui/TravelStyles";
@@ -28,14 +28,16 @@ const page = () => {
   const { step } = useFormState();
 
   return (
-    <section className="h-screen flex justify-center items-center">
+    <section className="h-screen flex justify-center items-center font-roboto">
       {step !== 3 ? (
-        <div className="bg-gray-400 w-5/6 rounded-xl min-h-[590px] flex items-center justify-center relative">
-          <ActiveStepFormComponent />
-          <ProgressIdentifier />
+        <div className=" bg-[url('/bg-secondary-onboarding.svg')] bg-no-repeat bg-cover w-5/6 rounded-xl min-h-[590px] flex items-center justify-center relative">
+          <div className="bg-[url('/bg-onboarding.svg')] bg-no-repeat bg-cover w-full rounded-xl">
+            <ActiveStepFormComponent />
+          </div>
+            <ProgressIdentifier />
         </div>
       ) : (
-          <CircularProgress />
+        <CircularProgress />
       )}
     </section>
   );

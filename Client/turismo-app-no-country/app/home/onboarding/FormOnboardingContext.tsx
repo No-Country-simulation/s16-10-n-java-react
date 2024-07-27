@@ -30,7 +30,6 @@ import {
   export function FormProvider({ children }: IProps) {
     const [formData, setFormData] = useState();
     const [step, setStep] = useState(-1);
-    // const [formData, setFormData]
   
     function onHandleNext() {
       setStep((prev) => prev + 1);

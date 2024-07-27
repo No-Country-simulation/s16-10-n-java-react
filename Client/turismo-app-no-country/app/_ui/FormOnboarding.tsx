@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useFormState } from "./FormContext";
+import { useFormState } from "../home/onboarding/FormOnboardingContext";
 import datos from "../home/onboarding/datos.json";
 import CardOnboarding from "./CardOnboarding";
 import BtnSiguiente from "./BtnNext";

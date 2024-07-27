@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 import React from "react";
-import { useFormState } from "./FormContext";
-import Button from '@mui/material/Button';
+import { useFormState } from "../home/onboarding/FormOnboardingContext";
+import Button from "@mui/material/Button";
 
 const BtnNext = () => {
   const { step } = useFormState();
@@ -14,14 +14,19 @@ const BtnNext = () => {
   return (
     <>
       {step !== 2 ? (
-        <Button type="submit" className="py-2 px-5 rounded border-none text-white bg-primary">
+        <Button
+          sx={{ textTransform: "none" }}
+          type="submit"
+          className="py-3 px-5 rounded border-none text-white bg-primary text-xs"
+        >
           Siguiente
         </Button>
       ) : (
         <Button
+          sx={{ textTransform: "none" }}
           onClick={handleRedirect}
           type="submit"
-          className="py-2 px-5 rounded border-none text-white bg-primary"
+          className="py-3 px-5 rounded border-none text-white bg-primary text-xs"
         >
           Finalizar
         </Button>

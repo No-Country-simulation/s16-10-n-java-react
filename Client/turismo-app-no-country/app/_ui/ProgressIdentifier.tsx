@@ -1,10 +1,10 @@
 import React from 'react'
-import { useFormState } from './FormContext'
+import { useFormState } from '../home/onboarding/FormOnboardingContext'
 
 const ProgressIdentifier = () => {
     const { step } = useFormState();
   return (
-    <span className="absolute bottom-5 right-5 text-base">{step + 2}/4</span>
+    <span className="absolute bottom-6 right-5 text-base text-secondary font-medium">{step + 2}/4</span>
   )
 }
 
