@@ -13,7 +13,7 @@ const layoutPerfil = ({ children }: { children: React.ReactNode }) => {
           />
           <EditIcon className="absolute bottom-0 right-0 translate-x-1 text-primary" />
         </div>
-        <h5 className="m-0 mt-1 font-normal text-sm text-secondary lg:text-lg">Nombre completo</h5>
+        <h5 className="m-0 mt-1 font-normal text-sm sm:text-base lg:text-lg text-secondary ">Nombre completo</h5>
       </section>
       {children}
     </div>
