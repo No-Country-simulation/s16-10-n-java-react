@@ -7,7 +7,7 @@ export const Logo = () => {
                 viewBox="0 0 26 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="sm:hidden"
+                className=""
             >
                 <path
                     d="M13.0475 34.9999L6.15227 26.7256"
@@ -37,7 +37,7 @@ export const Logo = () => {
                 viewBox="0 0 36 52"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="hidden sm:block"
+                className="hidden "
             >
                 <path
                     d="M18.4722 50.3086L8.47217 38.3086"
