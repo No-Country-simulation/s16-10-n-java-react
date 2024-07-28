@@ -43,7 +43,6 @@ const MisDatos = () => {
   console.log(errors);
 
   return (
-    // Hacer que el contenedor ocupe """"toda la pantalla"""" lo gris, dejarle igual un gap 
     <section className="flex justify-center max-w-[1040px] mx-auto mt-4 sm:mt-9 lg:mt-14">
       <form
         onSubmit={handleSubmit(onSubmit)}

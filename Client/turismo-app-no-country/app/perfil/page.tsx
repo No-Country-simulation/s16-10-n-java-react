@@ -73,7 +73,7 @@ const Perfil = () => {
       </section>
 
       <section className="w-full flex flex-col items-center justify-center sm:gap-2 lg:gap-4">
-        <h5 className="inline-block m-0 text-sm lg:text-base font-nprmal px-5 py-1 bg-derby rounded text-secondary">
+        <h5 className="inline-block m-0 text-sm lg:text-base font-bold px-5 py-1 bg-derby rounded text-secondary">
           Rutas guardadas
         </h5>
 

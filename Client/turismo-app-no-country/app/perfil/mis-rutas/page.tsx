@@ -1,5 +1,6 @@
 import React from 'react';
 import AddIcon from "@mui/icons-material/Add";
+import Link from 'next/link';
 
 const MisRutas = () => {
 
@@ -63,11 +64,13 @@ const MisRutas = () => {
           {carpetas &&
             carpetas.map((carpeta, index) => (
               <div key={carpeta.id}>
-                <div className="w-24 h-24 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-derby rounded flex justify-center items-center cursor-pointer">
-                  {index === 0 && (
-                    <AddIcon className="text-6xl text-primary hover:scale-110" />
-                  )}
-                </div>
+                <Link href={index === 0 ? "" : "/perfil/mis-rutas/detalle"}>
+                  <div className="w-24 h-24 sm:w-48 sm:h-48 lg:w-60 lg:h-60 bg-derby rounded flex justify-center items-center cursor-pointer">
+                    {index === 0 && (
+                      <AddIcon className="text-6xl text-primary hover:scale-110" />
+                    )}
+                  </div>
+                </Link>
                 <h6 className="m-0 text-xs sm:text-sm lg:text-base font-normal text-center mt-1 text-secondary">
                   {carpeta.name}
                 </h6>
