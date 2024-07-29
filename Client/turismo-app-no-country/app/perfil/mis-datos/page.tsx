@@ -43,7 +43,7 @@ const MisDatos = () => {
   console.log(errors);
 
   return (
-    <section className="flex justify-center max-w-[1040px] mx-auto mt-4 sm:mt-9 lg:mt-14">
+    <section className="flex justify-center max-w-[1400px] mx-auto mt-4 sm:mt-9 lg:mt-14 sm:px-2">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-derby flex flex-col items-center gap-6 sm:gap-8 lg:gap-10 rounded-lg w-4/5 lg:w-full py-6 lg:py-10 "
@@ -58,7 +58,7 @@ const MisDatos = () => {
               placeholder={dato.placeholder}
               {...register(dato.clave, { required: true })}
             />
-            {errors[dato.clave] && errors[dato.clave].type === "required" && (
+            {errors[dato.clave]?.type === "required" && (
               <span className="text-xs text-pureRed">Este campo es requerido</span>
             )}
           </div>

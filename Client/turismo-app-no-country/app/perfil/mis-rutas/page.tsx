@@ -60,7 +60,7 @@ const MisRutas = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 sm:gap-12 lg:gap-20 w-11/12 lg:max-w-[1024px] mx-auto mt-4 sm:mt-9 lg:mt-14 ">
+    <div className="flex flex-wrap justify-center gap-4 sm:gap-12 lg:gap-20 w-11/12 lg:max-w-[1400px] mx-auto mt-4 sm:mt-9 lg:mt-14 sm:px-2">
           {carpetas &&
             carpetas.map((carpeta, index) => (
               <div key={carpeta.id}>

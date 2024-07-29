@@ -49,7 +49,7 @@ const Perfil = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-4 sm:gap-9 lg:gap-14 mt-4 sm:mt-9 lg:mt-14 max-w-[1024px] mx-auto">
+    <div className="flex flex-col items-center gap-4 sm:gap-9 lg:gap-14 mt-4 sm:mt-9 lg:mt-14 max-w-[1400px] mx-auto sm:px-2">
       <section className="bg-derby flex flex-col items-center justify-center w-4/6 lg:w-full rounded">
         <h4 className="text-secondary m-5 lg:m-8 text-lg lg:text-2xl ">
           Bienvenido *****!
@@ -80,7 +80,7 @@ const Perfil = () => {
         <div className="flex w-full justify-around mt-3">
           {carpetas &&
             carpetas.map((carpeta, index) => (
-              <div>
+              <div key={carpeta.id}>
                 <div className="w-24 h-24 bg-derby rounded flex justify-center items-center cursor-pointer">
                   {index === 0 && (
                     <AddIcon className="text-6xl text-primary hover:scale-110" />

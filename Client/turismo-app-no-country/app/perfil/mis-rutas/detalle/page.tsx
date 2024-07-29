@@ -40,7 +40,28 @@ const CarpetaRuta = () => {
       valuation: 3.5,
     },
     {
-      id: 4,
+      id: 6,
+      src: "https://img.freepik.com/foto-gratis/disparo-alto-angulo-camino-madera-parque-nacional-lagos-plitvice-croacia_181624-20391.jpg",
+      title: "Nombre ruta",
+      location: "Locación",
+      valuation: 3.5,
+    },
+    {
+      id: 7,
+      src: "https://img.freepik.com/foto-gratis/disparo-alto-angulo-camino-madera-parque-nacional-lagos-plitvice-croacia_181624-20391.jpg",
+      title: "Nombre ruta",
+      location: "Locación",
+      valuation: 3.5,
+    },
+    {
+      id: 8,
+      src: "https://img.freepik.com/foto-gratis/disparo-alto-angulo-camino-madera-parque-nacional-lagos-plitvice-croacia_181624-20391.jpg",
+      title: "Nombre ruta",
+      location: "Locación",
+      valuation: 3.5,
+    },
+    {
+      id: 9,
       src: "https://img.freepik.com/foto-gratis/disparo-alto-angulo-camino-madera-parque-nacional-lagos-plitvice-croacia_181624-20391.jpg",
       title: "Nombre ruta",
       location: "Locación",
@@ -49,14 +70,14 @@ const CarpetaRuta = () => {
   ];
 
   return (
-    <div className=" flex flex-col mt-5 lg:mt-12 w-11/12 max-w-[1040px] mx-auto">
+    <div className=" flex flex-col mt-5 lg:mt-12 w-11/12 max-w-[1400px] mx-auto px-2">
       <h5 className="mx-auto m-0 text-sm lg:text-base font-bold px-5 py-1 bg-derby rounded text-secondary">
         Rutas guardadas
       </h5>
-      <div className="flex flex-wrap justify-center items-center mt-3 lg:mt-12 gap-2 sm:gap-4 lg:gap-8">
+      <div className="flex flex-wrap justify-center items-center mt-3 lg:mt-12 gap-2 sm:gap-6 lg:gap-10">
         {rutas &&
           rutas.map((ruta) => (
-            <div>
+            <div key={ruta.id}>
               <div className="w-80 h-16 lg:w-96 sm:h-20 lg:h-24 rounded-t-lg">
                 <img
                   src={ruta.src}
