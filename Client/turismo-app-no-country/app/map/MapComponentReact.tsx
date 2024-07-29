@@ -23,12 +23,14 @@ const MapComponentReact = () => {
             <MapContainer
                 
                 zoom={13}
-                scrollWheelZoom={true}
+                scrollWheelZoom={false}
                 style={{
-                    height: '400px',
+                    height: '700px',
                     width: '100%',
-                    maxWidth: '400px',
+                    maxWidth: 'full',
                     borderRadius: '10px',
+                    overflow: 'hidden',
+                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
                 }}
                 boundsOptions={{ padding: [50, 50] }}
             >
