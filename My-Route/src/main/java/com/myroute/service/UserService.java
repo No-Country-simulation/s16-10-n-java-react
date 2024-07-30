@@ -1,6 +1,6 @@
 package com.myroute.service;
 
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,7 +21,8 @@ public class UserService {
 
  // CREAR USUARIO
     @Transactional
-    public void userRegister (String name, String lastName, String email, Boolean isActive, Rol_User rol, List<Preferences> preferences)throws Exception {
+    public void userRegister (String name, String lastName, String email, Date birthDate, 
+    Boolean isActive, Rol_User rol, List<Preferences> preferences)throws Exception {
         // if (userRepository.findByEmail(email).isPresent()) {
         //     throw new Exception("El correo electrónico ya está registrado");
         // }
@@ -31,6 +32,7 @@ public class UserService {
         user.setName(name);
         user.setLastName(lastName);
         user.setEmail(email);
+        user.setBirthDate(birthDate);
         user.setIsActive(true);
         user.setRol(rol);
         user.setPreferences(preferences);
@@ -40,9 +42,8 @@ public class UserService {
     }
 
     public List<User> findAll() {
-        List<User> users = new ArrayList<>();
-        users = userRepository.findAll();
-        return users;
+       
+        return (List<User>) userRepository.findAll();
     }
 
     public Optional<User> findById(Long id) {

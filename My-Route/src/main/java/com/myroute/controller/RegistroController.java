@@ -1,9 +1,11 @@
 package com.myroute.controller;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,11 +42,13 @@ public class RegistroController {
 
     @PostMapping("/registerUser")
     public String registro(@RequestParam String name, @RequestParam String lastName, 
-    @RequestParam String email, Boolean isActive, @RequestParam Rol_User rol,@RequestParam List<Preferences> preferences,ModelMap modelo) {
+    @RequestParam String email, 
+    @RequestParam("birthday") @DateTimeFormat(pattern = "yyyy-MM-dd") Date birthDate,
+     Boolean isActive, @RequestParam Rol_User rol, @RequestParam List<Preferences> preferences,ModelMap modelo) {
 
         try {
 
-            userService.userRegister(name, lastName, email, isActive, rol, preferences);
+            userService.userRegister(name, lastName, email, birthDate, isActive, rol, preferences);
             
 
             modelo.put("exito", "Usuario registrado correctamente!");
@@ -85,6 +89,7 @@ public class RegistroController {
             updatedUser.setName(userDetails.getName());
             updatedUser.setLastName(userDetails.getLastName());
             updatedUser.setEmail(userDetails.getEmail());
+            updatedUser.setBirthDate(userDetails.getBirthDate());            
             updatedUser.setIsActive(userDetails.getIsActive());
             updatedUser.setPreferences(userDetails.getPreferences());
             updatedUser.setRol(userDetails.getRol());

@@ -1,5 +1,6 @@
 package com.myroute.entity;
 
+import java.util.Date;
 import java.util.List;
 
 import com.myroute.enums.Preferences;
@@ -16,6 +17,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -31,6 +34,10 @@ public class User {
     private String name;
     private String lastName;
     private String email;
+
+    @Temporal(TemporalType.DATE)
+    private Date birthDate;
+
     private Boolean isActive; // inicia en verdadero, simboliza la baja o el alta del usuario
 
     @ElementCollection(targetClass = Preferences.class, fetch = FetchType.EAGER)
