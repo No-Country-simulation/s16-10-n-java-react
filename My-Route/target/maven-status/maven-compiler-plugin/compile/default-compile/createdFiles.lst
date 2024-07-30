@@ -5,9 +5,12 @@ com\myroute\MyRouteApplication$HelloWorldController.class
 com\myroute\entity\Enum\DaysOfWeek.class
 com\myroute\entity\Enum\RouteType.class
 com\myroute\entity\Enum\PreferenceCategory.class
+com\myroute\repository\RouteReviewRepository.class
 com\myroute\entity\Schedule.class
 com\myroute\MyRouteApplication.class
 com\myroute\controller\RouteController.class
-com\myroute\entity\City.class
+com\myroute\controller\RouteReviewController.class
 com\myroute\repository\RouteRepository.class
+com\myroute\dto\RouteReviewResponse.class
 com\myroute\entity\Route.class
+com\myroute\service\RouteReviewService.class
