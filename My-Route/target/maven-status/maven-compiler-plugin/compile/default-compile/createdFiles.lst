@@ -1,0 +1,13 @@
+com\myroute\service\RouteService.class
+com\myroute\entity\RouteReview.class
+com\myroute\entity\Place.class
+com\myroute\MyRouteApplication$HelloWorldController.class
+com\myroute\entity\Enum\DaysOfWeek.class
+com\myroute\entity\Enum\RouteType.class
+com\myroute\entity\Enum\PreferenceCategory.class
+com\myroute\entity\Schedule.class
+com\myroute\MyRouteApplication.class
+com\myroute\controller\RouteController.class
+com\myroute\entity\City.class
+com\myroute\repository\RouteRepository.class
+com\myroute\entity\Route.class

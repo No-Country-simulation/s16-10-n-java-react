@@ -24,6 +24,9 @@ public class Route {
 
     private String description;
 
+    @Column(name = "is_active")
+    private Boolean isActive = true;
+
     @ManyToMany(mappedBy = "routes", cascade = CascadeType.ALL)
     private List<Place> places = new ArrayList<>();
 
