@@ -21,13 +21,28 @@ const RouteTimeLineItems = [
     },
 ];
 
-export const RouteTimeLine = () => {
+interface place {
+    
+    id: number;
+    title: string;
+    description: string;
+    coordinates: number[];
+    
+}
+
+
+
+interface Props {
+    places: place[];
+}
+
+export const RouteTimeLine: React.FC<Props> = ({ places }) => {
     return (
         <>
             <div className="flex flex-col items-center justify-center bg-derby rounded-xl w-full h-full p-3">
                 <div className=" border-0 border-l-8 border-secondary border-solid">
                     <ul className="flex flex-col list-none gap-y-12">
-                        {RouteTimeLineItems.map((item) => (
+                        {places.map((item) => (
                             <li key={item.id} className="relative">
                                 <div className="absolute top-2 -left-[54px] w-5 h-5 bg-primary rounded-full"></div>
                                 <h2 className="m-0 text-base">{item.title}</h2>
