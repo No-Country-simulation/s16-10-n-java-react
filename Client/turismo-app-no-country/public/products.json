@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "Parque centenario",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/parque-centenario-2023-1500x610.jpg",
+      "imageAlt": "Vista del Parque centenario.",
+      "reach": "10k",
+      "price": "Entrada gratuita",
+      "tiempo": "Ideal",
+      "coordinates": [-34.6038, -58.4347],
+      "address": "xxxxxx"
+    },
+    {
+      "id": 2,
+      "name": "Jardín Botánico",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/botanico_jardin-1500x610.jpg",
+      "imageAlt": "Flores en el Jardín Botánico.",
+      "reach": "10k",
+      "price": "$10",
+      "tiempo": "Ideal",
+      "coordinates": [-34.5872, -58.3842],
+      "address": "xxxxxx"
+    },
+    {
+      "id": 3,
+      "name": "Museo Nacional de Bellas Artes",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/museo-nacional-bellas-artes-1500x610-interior.jpg",
+      "imageAlt": "Fachada del Museo de Historia.",
+      "reach": "10k",
+      "price": "$5",
+      "tiempo": "Ideal",
+      "coordinates": [-34.583986, -58.39297],
+      "address": "xxxxx"
+    },
+    {
+      "id": 4,
+      "name": "Costanera",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/patio_grastronomico_costanera_norte_1200_belgrano.jpg",
+      "imageAlt": "Playa al atardecer.",
+      "reach": "10k",
+      "price": "Entrada gratuita",
+      "tiempo": "Ideal",
+      "coordinates": [-34.61694, -58.35675],
+      "address": "xxxxx"
+    },
+    {
+      "id": 5,
+      "name": "Reserva Ecológica Costanera Sur",
+      "Temporada": "#",
+      "imageSrc": "https://lh3.googleusercontent.com/p/AF1QipMFCqRSqFrpHJ0kvkST35Wyj8JH9lprijpU3tVY=s1360-w1360-h1020",
+      "imageAlt": "Reserva Ecológica Costanera Sur",
+      "reach": "10k",
+      "price": "$50",
+      "tiempo": "Ideal",
+      "coordinates": [-34.6038, -58.3525],
+      "address": "xxxxx"
+    },
+    {
+      "id": 6,
+      "name": "Centro Cultural",
+      "Temporada": "#",
+      "imageSrc": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQWZVPSdiUcbkzJnuSgMEjUNhBc-x45x5HHCTvO1a9j3YmnZ5doe4KWB3eSILvLf06o4tegOL0N5qf0EYdzNwX-AHJPPaTDevnxHmEJow",
+      "imageAlt": "Eventos en el Centro Cultural.",
+      "reach": "10k",
+      "price": "$150",
+      "tiempo": "Ideal",
+      "coordinates": [ -34.6033, -58.3694],
+      "address": "xxxxx"
+    },
+    {
+      "id": 7,
+      "name": "Puente de la Mujer",
+      "Temporada": "#",
+      "imageSrc": "https://elojodelarte.com/media/k2/items/cache/ef76ec555f88001101e0e225c3aa91e9_XL.webp?t=20240227_051345",
+      "imageAlt": "Puente de la Mujer.",
+      "reach": "10k",
+      "price": "Entrada gratuita",
+      "tiempo": "Ideal",
+      "coordinates": [-34.607939, -58.364911],
+      "address": "xxxxxx"
+    },
+    {
+      "id": 8,
+      "name": "Calle Museo Caminito",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/artes-plasticas-la-boca-colores-1500x610.jpg",
+      "imageAlt": "Caminito",
+      "reach": "10k",
+      "price": "$12",
+      "tiempo": "Ideal",
+      "coordinates": [-34.6393, -58.3628],
+      "address": "xxxxx"
+    },
+    {
+      "id": 9,
+      "name": "Obelisco",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/obelisco_ba_verde_1200.jpg",
+      "imageAlt": "Obelisco.",
+      "reach": "10k",
+      "price": "Entrada gratuita",
+      "tiempo": "Ideal",
+      "coordinates": [-34.60376, -58.38162],
+      "address": "xxxxx"
+    },
+    {
+      "id": 10,
+      "name": "Rosedal de Palermo",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/rosedal_palermo_1200_puente.jpg",
+      "imageAlt": "Rosedal de Palermo.",
+      "reach": "10k",
+      "price": "$8",
+      "tiempo": "Ideal",
+      "coordinates": [-34.570633, -58.417287],
+      "address": "xxxxxxxxxxxxx"
+    },
+    {
+      "id": 11,
+      "name": "Planetario Galileo Galilei",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/planetario_noche_1200_1.jpg",
+      "imageAlt": "Planetario Galileo Galilei.",
+      "reach": "10k",
+      "price": "$30",
+      "tiempo": "Ideal",
+      "coordinates": [-34.569722222222, -58.411666666667],
+      "address": "xxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "id": 12,
+      "name": "Cementerio de la Recoleta",
+      "Temporada": "#",
+      "imageSrc": "https://turismo.buenosaires.gob.ar/sites/turismo/files/cementerio-recoleta-pasillo-interno-1500x610-nn_0.jpg",
+      "imageAlt": "Cementerio de la Recoleta.",
+      "reach": "10k",
+      "price": "Entrada gratuita",
+      "tiempo": "Ideal",
+      "coordinates": [-34.588055555556, -58.393055555556],
+      "address": "xxxxxxxxxxxxxxx"
+    }
+  ]
+  
