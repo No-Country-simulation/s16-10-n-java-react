@@ -17,7 +17,7 @@ export const RouteCardContainer: React.FC<RouteCardContainerProps> = ({
     title,
 }) => {
     return (
-        <div className="flex items-center justify-center max-w-[1400px] w-full h-full flex-col p-2">
+        <div className="flex items-center justify-center max-w-[1400px] w-full h-full flex-col">
             <div className='flex justify-start w-full mx-4 '>
                 <h1 className="font-semibold text-2xl mb-0 text-secondary ">
                     {title}
