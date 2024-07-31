@@ -3,25 +3,25 @@
     {
       "id": 1,
       "title": "Aventura y actividad al aire libre",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-1/aventura.jpeg",
       "value": "option1"
     },
     {
       "id": 2,
       "title": "Cultura e historia",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-1/cultura.jpeg",
       "value": "option2"
     },
     {
       "id": 3,
       "title": "Relajación y bienestar",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-1/relajacion.jpeg",
       "value": "option3"
     },
     {
       "id": 4,
       "title": "Gastronomía y vida nocturna",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-1/vida_nocturna.jpeg",
       "value": "option4"
     }
   ],
@@ -29,25 +29,25 @@
     {
       "id": 5,
       "title": "Descubrir lugares escondidos y menos turísticos",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-2/1_descubrir.jpeg",
       "value": "option5"
     },
     {
       "id": 6,
       "title": "Participar en eventos y festivales locales",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-2/2_festival.jpeg",
       "value": "option6"
     },
     {
       "id": 7,
       "title": "Conectar con la cultura local y sus habitantes",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-2/3_cultura.jpeg",
       "value": "option7"
     },
     {
       "id": 8,
       "title": "Relajar y desconectar del estrés diario",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-2/4_relajar.webp",
       "value": "option8"
     }
   ],
@@ -55,25 +55,25 @@
     {
       "id": 9,
       "title": "Pueblos autóctonos",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-3/1_pueblo.jpeg",
       "value": "option9"
     },
     {
       "id": 10,
       "title": "Ciudades cosmopolitanas",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-3/2_cosmopolitana.jpeg",
       "value": "option10"
     },
     {
       "id": 11,
       "title": "Espacios rodeados de naturaleza",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-3/3_naturaleza.jpeg",
       "value": "option11"
     },
     {
       "id": 12,
       "title": "Una combinación de todos",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-3/4_combinaciones.jpeg",
       "value": "option12"
     }
   ],
@@ -81,25 +81,25 @@
     {
       "id": 13,
       "title": "Senderismo y trekking",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-4/1_treakking.jpeg",
       "value": "option13"
     },
     {
       "id": 14,
       "title": "Visitas al museo y sitiosn históricos",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-4/2_museo.webp",
       "value": "option14"
     },
     {
       "id": 15,
       "title": "Vida nocturna y entretenimiento",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-4/3_entretenimiento.jpeg",
       "value": "option15"
     },
     {
       "id": 16,
       "title": "Actividades gastronómicas",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-4/4_gastronomia.webp",
       "value": "option16"
     }
   ],
@@ -107,25 +107,25 @@
     {
       "id": 17,
       "title": "Muy importante, me gusta participar",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-5/1_muy-importante.png",
       "value": "option17"
     },
     {
       "id": 18,
       "title": "Algo importante, no es crucial",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-5/2_importante.png",
       "value": "option18"
     },
     {
       "id": 19,
       "title": "Poco importante, prefiero otras cosas",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-5/3_no-muy-importante.png",
       "value": "option19"
     },
     {
       "id": 20,
       "title": "Poco importante, no me interesa",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-5/4_no-importante.png",
       "value": "option20"
     }
   ],
@@ -133,25 +133,25 @@
     {
       "id": 21,
       "title": "Pronóstico diario para planificar actividades",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-6/1_planificar.png",
       "value": "option21"
     },
     {
       "id": 22,
       "title": "Alertas de cambios bruscos de clima",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-6/2_alerta.png",
       "value": "option22"
     },
     {
       "id": 23,
       "title": "Recomendaciones sobre qué llevar segn el clima",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-6/3_recomendaciones.png",
       "value": "option23"
     },
     {
       "id": 24,
       "title": "No necesito información sobre el clima",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-6/4_no-interesa.png",
       "value": "option24"
     }
   ],
@@ -159,25 +159,25 @@
     {
       "id": 25,
       "title": "Basadas en mis intereses y preferencias",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-7/1_preferencias.png",
       "value": "option25"
     },
     {
       "id": 26,
       "title": "Basadas en las recomendaciones de otros usuarios",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-7/2_recomendaciones.png",
       "value": "option26"
     },
     {
       "id": 27,
       "title": "Basadas en la popularidad de los lugares",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-7/3_popularidad.png",
       "value": "option27"
     },
     {
       "id": 28,
       "title": "No necesito recomendaciones, prefiero planificar por mi cuenta",
-      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "src": "/images/onboarding/pregunta-7/4_no-necesito.png",
       "value": "option28"
     }
   ]
