@@ -4,7 +4,36 @@ import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import MapIcon from '@mui/icons-material/Map';
 
-export const RouteDataDetails = () => {
+interface RouteDataDetailsProps {
+    location: {
+        title: string;
+        description: string;
+    };
+    seasson: {
+        title: string;
+        description: string;
+    };
+    time: {
+        title: string;
+        description: string;
+    };
+    warnings: {
+        title: string;
+        description: string;
+    };
+    distance: {
+        title: string;
+        description: string;
+    };
+}
+
+export const RouteDataDetails: React.FC<RouteDataDetailsProps> = ({
+    location,
+    seasson,
+    time,
+    warnings,
+    distance,
+}) => {
     return (
         <div className="flex flex-col items-center bg-derby rounded-xl w-full  p-3">
             <h2 className="font-normal text-sm rounded-lg bg-slate-300 py-2 px-9 mb-4 mt-0 ">
@@ -13,29 +42,29 @@ export const RouteDataDetails = () => {
             <dl className=" my-1">
                 <dt className="font-semibold text-base flex items-center gap-x-3 my-1">
                     <LocationOnIcon />
-                    <span>Locacion de la ruta</span>
+                    <span>{location.title}</span>
                 </dt>
-                <dd className="text-sm font-normal">Especificación</dd>
+                <dd className="text-sm font-normal">{location.description}</dd>
                 <dt className="font-semibold text-base flex items-center gap-x-3 my-1">
                     <DateRangeIcon />
-                    <span>Tempordada ideal</span>
+                    <span>{seasson.title}</span>
                 </dt>
-                <dd className="text-sm font-normal">Especificación</dd>
+                <dd className="text-sm font-normal">{seasson.description}</dd>
                 <dt className="font-semibold text-base flex items-center gap-x-3 my-1">
                     <QueryBuilderIcon />
-                    <span>Duración de la ruta</span>
+                    <span>{time.title}</span>
                 </dt>
-                <dd className="text-sm font-normal">Especificación</dd>
+                <dd className="text-sm font-normal">{time.description}</dd>
                 <dt className="font-semibold text-base flex items-center gap-x-3 my-1">
                     <WarningAmberIcon />
-                    <span>Advertencias</span>
+                    <span>{warnings.title}</span>
                 </dt>
-                <dd className="text-sm font-normal">Especificación</dd>
+                <dd className="text-sm font-normal">{warnings.description}</dd>
                 <dt className="font-semibold text-base flex items-center gap-x-3 my-1">
                     <MapIcon />
-                    <span>Extensión de la ruta</span>
+                    <span>{distance.title}</span>
                 </dt>
-                <dd className="text-sm font-normal">Especificación</dd>
+                <dd className="text-sm font-normal">{distance.description}</dd>
             </dl>
         </div>
     );

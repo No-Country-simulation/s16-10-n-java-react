@@ -7,21 +7,25 @@ import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 const myIcon = L.divIcon({
     className: 'my-icon',
     iconSize: [5, 5],
-    iconAnchor: [20, 20],
+    iconAnchor: [0, 0],
 });
 
-const MyComponent = () => {
+const MyComponent: React.FC<Props> = ({ places }) => {
     const map = useMap();
     console.log('Mapa actual:', map);
-    map.fitBounds([[51.5, -0.09], [51.3, -0.05]]);
+    map.fitBounds([places.map((place: any) => place.coordinates)], {});
     return null;
 };
 
-const MapComponentReact = () => {
+interface Props {
+    places: any;
+}
+
+const MapComponentReact: React.FC<Props> = ({ places }) => {
+    console.log(places);
     return (
         <>
             <MapContainer
-                
                 zoom={13}
                 scrollWheelZoom={false}
                 style={{
@@ -34,12 +38,24 @@ const MapComponentReact = () => {
                 }}
                 boundsOptions={{ padding: [50, 50] }}
             >
-                <MyComponent />
+                <MyComponent places={places} />
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]} icon={myIcon}>
+
+                {places.map((place: any) => (
+                    <Marker
+                        key={place.id}
+                        position={[place.coordinates[0], place.coordinates[1]]}
+                        icon={myIcon}
+                    >
+                        <Popup>
+                            {place.title} <br /> {place.description}.
+                        </Popup>
+                    </Marker>
+                ))}
+                {/* <Marker position={[51.505, -0.09]} icon={myIcon}>
                     <Popup>
                         HOLA <br /> Easily customizable.
                     </Popup>
@@ -48,7 +64,7 @@ const MapComponentReact = () => {
                     <Popup>
                         HOLA <br /> Easily customizable.
                     </Popup>
-                </Marker>
+                </Marker> */}
             </MapContainer>
         </>
     );
