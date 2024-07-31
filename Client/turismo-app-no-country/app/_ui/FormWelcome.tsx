@@ -7,7 +7,7 @@ type FormValues = {
   options: string[];
 };
 
-const Bienvenida = () => {
+const FormWelcome = () => {
   const { handleSubmit } = useForm<FormValues>();
   const { onHandleNext, step } = useFormState();
 
@@ -34,4 +34,4 @@ const Bienvenida = () => {
   );
 };
 
-export default Bienvenida;
+export default FormWelcome;

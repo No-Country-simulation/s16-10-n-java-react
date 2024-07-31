@@ -13,7 +13,7 @@ const BtnNext = () => {
 
   return (
     <>
-      {step !== 2 ? (
+      {step !== 6 ? (
         <Button
           sx={{ textTransform: "none" }}
           type="submit"

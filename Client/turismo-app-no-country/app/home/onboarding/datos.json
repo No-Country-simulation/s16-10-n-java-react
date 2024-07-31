@@ -76,5 +76,109 @@
       "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
       "value": "option12"
     }
+  ],
+  [
+    {
+      "id": 13,
+      "title": "Senderismo y trekking",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option13"
+    },
+    {
+      "id": 14,
+      "title": "Visitas al museo y sitiosn históricos",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option14"
+    },
+    {
+      "id": 15,
+      "title": "Vida nocturna y entretenimiento",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option15"
+    },
+    {
+      "id": 16,
+      "title": "Actividades gastronómicas",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option16"
+    }
+  ],
+  [
+    {
+      "id": 17,
+      "title": "Muy importante, me gusta participar",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option17"
+    },
+    {
+      "id": 18,
+      "title": "Algo importante, no es crucial",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option18"
+    },
+    {
+      "id": 19,
+      "title": "Poco importante, prefiero otras cosas",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option19"
+    },
+    {
+      "id": 20,
+      "title": "Poco importante, no me interesa",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option20"
+    }
+  ],
+  [
+    {
+      "id": 21,
+      "title": "Pronóstico diario para planificar actividades",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option21"
+    },
+    {
+      "id": 22,
+      "title": "Alertas de cambios bruscos de clima",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option22"
+    },
+    {
+      "id": 23,
+      "title": "Recomendaciones sobre qué llevar segn el clima",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option23"
+    },
+    {
+      "id": 24,
+      "title": "No necesito información sobre el clima",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option24"
+    }
+  ],
+  [
+    {
+      "id": 25,
+      "title": "Basadas en mis intereses y preferencias",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option25"
+    },
+    {
+      "id": 26,
+      "title": "Basadas en las recomendaciones de otros usuarios",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option26"
+    },
+    {
+      "id": 27,
+      "title": "Basadas en la popularidad de los lugares",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option27"
+    },
+    {
+      "id": 28,
+      "title": "No necesito recomendaciones, prefiero planificar por mi cuenta",
+      "src": "https://pruebas.bienestarsaval.cl/storage/discount/MEjKbxy68Rlcwd85VLrEnwn0apYIIRqVXbPwuD26.png",
+      "value": "option28"
+    }
   ]
 ]
