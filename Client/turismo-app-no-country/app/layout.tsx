@@ -4,6 +4,7 @@ import './globals.css';
 
 import { CssBaseline } from '@mui/material';
 import Header from './_ui/Header';
+import Footer from './_ui/Footer';
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({
             <body className={`${roboto.className} ${roboto.variable}`}>
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
