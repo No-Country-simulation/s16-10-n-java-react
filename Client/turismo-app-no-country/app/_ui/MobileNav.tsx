@@ -4,6 +4,7 @@ import { Drawer, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 import Link from 'next/link';
+import SearchNav from '../busqueda/SearchNav';
 
 interface MobileNavProps {
     navList: any;
@@ -22,13 +23,13 @@ export const MobileNav: React.FC<MobileNavProps> = ({ navList }) => {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                className="text-primary p-4 sm:hidden"
+                className="text-primary p-4 md:hidden"
                 onClick={toggleDrawer(true)}
             >
                 <MenuIcon />
             </IconButton>
             <Drawer open={open} onClose={toggleDrawer(false)}>
-                <div className="flex flex-col justify-between items-end m-5 w-40">
+                <div className="flex flex-col justify-between items-end m-5 w-48">
                     {navList.map((link: any) => (
                         <Link
                             href={link.href}
@@ -39,6 +40,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ navList }) => {
                             {link.title}
                         </Link>
                     ))}
+                    <SearchNav/>
                 </div>
             </Drawer>
         </>
