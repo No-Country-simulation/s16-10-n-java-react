@@ -11,15 +11,17 @@ import { Pagination, FreeMode, Navigation } from 'swiper/modules';
 
 interface RouteCardContainerProps {
     title: string;
+    routes: any;
 }
 
 export const RouteCardContainer: React.FC<RouteCardContainerProps> = ({
     title,
+    routes,
 }) => {
     return (
         <div className="flex items-center justify-center max-w-[1400px] w-full h-full flex-col">
-            <div className='flex justify-start w-full mx-4 '>
-                <h1 className="font-semibold text-2xl mb-0 text-secondary ">
+            <div className="flex justify-start w-full mx-4 ">
+                <h1 className="font-medium text-2xl text-black rounded-md bg-primary h-16 flex justify-center items-center p-2 mb-4 px-8">
                     {title}
                 </h1>
             </div>
@@ -43,31 +45,13 @@ export const RouteCardContainer: React.FC<RouteCardContainerProps> = ({
                 modules={[Pagination, FreeMode, Navigation]}
                 className="w-full mx-4"
             >
-                <SwiperSlide>
-                    <div className="mb-9">
-                        <RouteCard />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="mb-9">
-                        <RouteCard />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="mb-9">
-                        <RouteCard />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="mb-9">
-                        <RouteCard />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="mb-9">
-                        <RouteCard />
-                    </div>
-                </SwiperSlide>
+                {routes.map((route: any) => (
+                    <SwiperSlide key={route.id}>
+                        <div className="mb-9">
+                            <RouteCard route={route} />
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     );
