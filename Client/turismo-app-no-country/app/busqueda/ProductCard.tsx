@@ -1,5 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import { Card, Rating } from '@mui/material';
+import { Button } from '@mui/material';
 
 interface Product {
   id: number;
@@ -34,7 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <div key={product.id} className="group relative w-80">
+    <Card key={product.id} className="group relative w-80 font-roboto">
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
         <img
           alt={product.imageAlt}
@@ -42,7 +44,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           className="h-full w-full object-cover object-center lg:h-full lg:w-full"
         />
       </div>
-      <div className="mt-4 flex justify-between">
+      <div className="mt-4 flex justify-between font-roboto">
         <div>
           <h3 className="text-sm text-gray-700">
             <a href={product.href}>
@@ -53,15 +55,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <p className="mt-1 text-sm text-gray-500">{product.color}</p>
         </div>
         <p className="text-sm font-medium text-gray-900">{product.price}</p>
-       
       </div>
-      <button
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
-        onClick={handleViewDetails}
-      >
-        Ver los Detalles
-      </button>
-    </div>
+      <div className='flex items-center font-roboto'>
+        <Rating name="read-only" value={4} readOnly />
+        <Button className="mt-4 px-2 py-2 bg-primary text-white rounded font-roboto" onClick={handleViewDetails}>
+          Detalles
+        </Button>
+      </div>
+    </Card>
   );
 };
 
