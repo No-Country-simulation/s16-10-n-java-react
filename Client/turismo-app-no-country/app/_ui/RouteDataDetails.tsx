@@ -36,7 +36,7 @@ export const RouteDataDetails: React.FC<RouteDataDetailsProps> = ({
 }) => {
     return (
         <div className="flex flex-col items-center bg-derby rounded-xl w-full  p-3">
-            <h2 className="font-normal text-sm rounded-lg bg-slate-300 py-2 px-9 mb-4 mt-0 ">
+            <h2 className="font-normal text-sm rounded-lg bg-secondary text-derby py-2 px-9 mb-4 mt-0 ">
                 Datos de la ruta
             </h2>
             <dl className=" my-1">

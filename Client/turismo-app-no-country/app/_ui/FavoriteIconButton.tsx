@@ -16,7 +16,7 @@ export const FavoriteIconButton = ({ id }: { id?: number }) => {
     return (
         <IconButton
             size="large"
-            className="text-white p-1 bg-primary shadow-primary/80 shadow-lg rounded-xl absolute -top-4 -right-0 z-20"
+            className="text-secondary p-1 bg-gray-300 shadow-lg rounded-xl absolute -top-4 -right-0 z-20"
             onClick={handleClick}
         >
             {isFavorite ? (

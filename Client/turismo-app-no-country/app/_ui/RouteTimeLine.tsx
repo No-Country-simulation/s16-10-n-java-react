@@ -44,7 +44,7 @@ export const RouteTimeLine: React.FC<Props> = ({ places }) => {
                     <ul className="flex flex-col list-none gap-y-12">
                         {places.map((item) => (
                             <li key={item.id} className="relative">
-                                <div className="absolute top-2 -left-[54px] w-5 h-5 bg-primary rounded-full"></div>
+                                <div className="absolute top-2 -left-[55px] w-6 h-6 bg-primary rounded-full shadow-lg"></div>
                                 <h2 className="m-0 text-base">{item.title}</h2>
                                 <p className="m-0 text-sm">
                                     {item.description}

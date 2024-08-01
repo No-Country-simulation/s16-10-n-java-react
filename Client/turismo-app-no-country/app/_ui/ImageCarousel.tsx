@@ -47,7 +47,15 @@ const slides = [
     // },
 ];
 
-export const ImageCarousel = () => {
+interface Props {
+    slides: {
+        id: number;
+        image: string;
+        title?: string;
+    }[];
+}
+
+export const ImageCarousel: React.FC<Props> = ( {slides}) => {
     return (
         <>
             <div className="max-w-[1400px] h-full w-full ">

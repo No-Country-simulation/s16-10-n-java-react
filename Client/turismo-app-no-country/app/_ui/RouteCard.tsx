@@ -4,26 +4,42 @@ import {
     CardContent,
     CardMedia,
     Rating,
-    Typography,
 } from '@mui/material';
 
-interface RouteCardProps {}
+import data from '../data/data';
 
-const RouteCard: React.FC<RouteCardProps> = () => {
+import { useRouter } from 'next/navigation';
+
+interface RouteCardProps {
+    route: any;
+}
+
+const RouteCard: React.FC<RouteCardProps> = ({ route }) => {
+    const router = useRouter();
+    const handleClick = () => {
+        const isRouteExist = data.some((element) => route.id === element.id);
+
+        if (isRouteExist) {
+            router.push(`/rutas/${route.id}`);
+        } else {
+            router.push('/home');
+        }
+    };
+
     return (
-        <Card  className='h-full shadow-md'>
+        <Card className="h-full shadow-lg border-solid sm:border-[2.5px] border-2 border-primary rounded-lg" onClick={handleClick}>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="beach"
-                    className='w-full max-h-32'
+                    src={route.src}
+                    alt={route.title}
+                    className="w-full sm:h-60 h-40 object-cover"
                 />
                 <CardContent>
-                    <p className='font-roboto text-base m-0'>
-                        Ruta de playa (10km)
+                    <p className="font-roboto text-base m-0">
+                        {`${route.title} (${route.distance})`}
                     </p>
-                    <Rating name="read-only" value={4} readOnly />
+                    <Rating name="read-only" value={route.value} readOnly />
                 </CardContent>
             </CardActionArea>
         </Card>
