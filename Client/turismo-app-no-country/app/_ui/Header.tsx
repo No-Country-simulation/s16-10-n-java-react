@@ -33,14 +33,14 @@ const Header = () => {
             <nav>
                 <div className="flex flex-row mx-4 justify-between items-center">
                     <MobileNav navList={headerNavLinks} />
-                    <div className="hidden sm:flex">
-                        <div className="hidden sm:flex justify-between items-center gap-x-2">
+                    <div className="hidden md:flex">
+                        <div className="hidden md:flex justify-between items-center gap-x-2">
                             <p className="text-secondary font-medium text-xl m-0">
                                 My routes
                             </p>
                             <Logo />
                         </div>
-                        <div className="hidden sm:flex justify-between items-center">
+                        <div className="hidden md:flex justify-between items-center">
                             {headerNavLinks.map((link) => (
                                 <Link
                                     href={link.href}
@@ -52,9 +52,10 @@ const Header = () => {
                             ))}
                         </div>
                     </div>
-
-                    <SearchNav />
-                    <div className="flex sm:hidden justify-between items-center gap-x-1">
+                    <div className='hidden md:flex'>
+                        <SearchNav />
+                    </div>
+                    <div className="flex md:hidden justify-between items-center gap-x-1">
                         <p className="text-secondary font-medium text-lg">
                             My routes
                         </p>
