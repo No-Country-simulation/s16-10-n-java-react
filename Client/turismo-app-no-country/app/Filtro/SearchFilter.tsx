@@ -121,7 +121,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
   };
 
   return (
-    <div className="bg-white max-h-[90vh] overflow-auto rounded-2xl">
+    <>
       <div className="flex justify-center items-center p-2 bg-derby">
         <h2 className="font-roboto m-0 text-sm">Filtros</h2>
       </div>
@@ -143,7 +143,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
                   </span>
                 </div>
               ))}
-            <ControlPointIcon className="text-primary " />
+            <ControlPointIcon className="text-primary cursor-pointer" />
           </div>
         </div>
         <div>
@@ -165,7 +165,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
                   </span>
                 </div>
               ))}
-            <ControlPointIcon className="text-primary " />
+            <ControlPointIcon className="text-primary cursor-pointer" />
           </div>
         </div>
 
@@ -181,7 +181,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
             onChange={(e) =>
               handleFilterChange("distancia", parseInt(e.target.value))
             }
-            className="w-full accent-secondary"
+            className="w-full accent-secondary cursor-pointer"
           />
           <div className="flex justify-between text-xs text-black">
             <span>0 km</span>
@@ -189,7 +189,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
             <span>200 km</span>
           </div>
         </div>
-            <button className="rounded text-white bg-primary border-0 p-3">Filtros premium</button>
+            <button className="rounded text-white bg-primary border-0 p-3 cursor-pointer">Filtros premium</button>
         <div className="">
           <label className="font-roboto text-blackred mb-2">Tiempo</label>
           <input
@@ -200,7 +200,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
             onChange={(e) =>
               handleFilterChange("tiempo", parseInt(e.target.value))
             }
-            className="w-full accent-secondary"
+            className="w-full accent-secondary cursor-pointer"
           />
           <div className="flex justify-between text-xs text-blackred">
             <span>0 h</span>
@@ -225,11 +225,11 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
                   </span>
                 </div>
               ))}
-            <ControlPointIcon className="text-primary " />
+            <ControlPointIcon className="text-primary cursor-pointer" />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

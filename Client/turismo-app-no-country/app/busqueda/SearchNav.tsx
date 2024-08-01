@@ -30,12 +30,14 @@ const SearchNav: React.FC = () => {
       </button>
       {isFilterOpen && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="relative w-11/12 md:w-1/2">
+          <div className="w-11/12 md:w-1/2">
+          <div className="bg-white max-h-[90vh] max-w-[420px] overflow-auto rounded-2xl mx-auto relative">
             <SearchFilter onFilter={handleFilter} onClose={toggleFilter} />
             <DisabledByDefaultIcon
-              className="text-primary absolute top-0 left-0 my-2 ml-4 text-xl"
+              className="text-primary absolute top-0 left-0 my-2 ml-4 text-xl cursor-pointer"
               onClick={toggleFilter}
             />
+            </div>
           </div>
         </div>
       )}
