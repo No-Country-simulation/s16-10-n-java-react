@@ -10,31 +10,38 @@ const iconList = [
     {
         id: 1,
         children: <BeachAccessIcon />,
+        label: 'Playa',
     },
 
     {
         id: 2,
         children: <TerrainIcon />,
+        label: 'Montaña', 
     },
     {
         id: 3,
         children: <LocationCityIcon />,
+        label: 'Ciudad',
     },
     {
         id: 4,
         children: <ForestIcon />,
+        label: 'Bosque',
     },
     {
         id: 5,
         children: <ChurchIcon />,
+        label: 'Pueblo',
     },
 ];
 
 export const IconsButtonsList = () => {
     return (
-        <div className="flex m-3 justify-evenly w-full max-w-[1400px] ">
+        <div className="flex py-3 justify-evenly w-full max-w-[1400px]  overflow-hidden gap-x-1">
             {iconList.map((element: any) => (
-                <IconButtonComponent key={element.id}>{element.children}</IconButtonComponent>
+                <IconButtonComponent key={element.id} label={element.label}>
+                    {element.children}
+                </IconButtonComponent>
             ))}
         </div>
     );
