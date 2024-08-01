@@ -1,4 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import BeachAccessIcon from "@mui/icons-material/BeachAccess";
+import LandscapeIcon from "@mui/icons-material/Landscape";
+import ForestIcon from "@mui/icons-material/Forest";
+import PaletteIcon from "@mui/icons-material/Palette";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
+import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
+import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
+
+import ControlPointIcon from "@mui/icons-material/ControlPoint";
 
 import {
   BuildingOfficeIcon,
@@ -7,19 +21,93 @@ import {
   PaperAirplaneIcon,
   PaintBrushIcon,
   RocketLaunchIcon,
-  TruckIcon
-} from '@heroicons/react/24/outline';
+  TruckIcon,
+} from "@heroicons/react/24/outline";
 
 interface SearchFilterProps {
-  onFilter: (filters: { name?: string; address?: string; price?: string; tiempo?: number }) => void;
+  onFilter: (filters: {
+    name?: string;
+    address?: string;
+    price?: string;
+    tiempo?: number;
+  }) => void;
   onClose: () => void;
 }
 
 const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
+  const espacios = [
+    {
+      id: 1,
+      icon: <LocationCityIcon />,
+      title: "Ciudad",
+    },
+    {
+      id: 2,
+      icon: <BeachAccessIcon />,
+      title: "Playa",
+    },
+    {
+      id: 3,
+      icon: <LandscapeIcon />,
+      title: "Montaña",
+    },
+    {
+      id: 4,
+      icon: <ForestIcon />,
+      title: "Campo",
+    },
+  ];
+
+  const actividades = [
+    {
+      id: 1,
+      icon: <PaletteIcon />,
+      title: "Arte",
+    },
+    {
+      id: 2,
+      icon: <RestaurantIcon />,
+      title: "Gourmet",
+    },
+    {
+      id: 3,
+      icon: <SelfImprovementIcon />,
+      title: "Relax",
+    },
+    {
+      id: 4,
+      icon: <FitnessCenterIcon />,
+      title: "Fitness",
+    },
+  ];
+
+  const traslados = [
+    {
+      id: 1,
+      icon: <DirectionsWalkIcon />,
+      title: "Caminar",
+    },
+    {
+      id: 2,
+      icon: <DirectionsBikeIcon />,
+      title: "Bicicleta",
+    },
+    {
+      id: 3,
+      icon: <DirectionsCarIcon />,
+      title: "Carro",
+    },
+    {
+      id: 4,
+      icon: <DirectionsBusIcon />,
+      title: "Bus",
+    },
+  ];
+
   const [selectedFilters, setSelectedFilters] = useState({
-    name: '',
-    address: '',
-    price: '',
+    name: "",
+    address: "",
+    price: "",
     tiempo: 0,
   });
 
@@ -33,106 +121,86 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
   };
 
   return (
-    <div className="container mx-auto p-2">
-      <div className="bg-derby p-2 rounded-md max-h-[80vh] overflow-auto">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="font-roboto text-blackred">Filtros</h2>
-        </div>
-         {/* Sección Dirección */}
-         <div className="mb-4">
-          <h3 className="font-roboto text-blackred">Espacio</h3>
-          <div className="grid grid-cols-3 gap-2">
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Ciudad')}
-              >
-                <BuildingOfficeIcon className="h-5 w-5 text-blackred" />
-              </div>
-              <span className="text-xs text-blackred">Ciudad</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Playa')}
-              >
-                <SunIcon className="h-5 w-5 text-blackred" />
-              </div>
-              <span className="text-xs text-blackred">Playa</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Añadir')}
-              >
-                <PlusIcon className="h-5 w-5 text-blackred" />
-              </div>
-              <span className="text-xs text-black">Añadir</span>
-            </div>
+    <div className="bg-white max-h-[90vh] overflow-auto rounded-2xl">
+      <div className="flex justify-center items-center p-2 bg-derby">
+        <h2 className="font-roboto m-0 text-sm">Filtros</h2>
+      </div>
+      <div className="px-5 py-6 flex flex-col gap-5">
+        <div className="">
+          <h3 className="m-0 text-sm font-roboto text-blackred">Espacio</h3>
+          <div className="flex justify-between items-center">
+            {espacios &&
+              espacios.map((espacio) => (
+                <div className="flex flex-col items-center" key={espacio.id}>
+                  <div
+                    className="bg-derby border border-solid border-primary p-4 rounded-md flex justify-center items-center cursor-pointer"
+                    onClick={() => handleFilterChange("address", espacio.title)}
+                  >
+                    {espacio.icon}
+                  </div>
+                  <span className="text-xs font-light bg-primary text-white w-full text-center rounded mt-1">
+                    {espacio.title}
+                  </span>
+                </div>
+              ))}
+            <ControlPointIcon className="text-primary " />
           </div>
         </div>
-        <div className="mb-4">
-          <h3 className="font-roboto text-black">Actividad</h3>
-          <div className="grid grid-cols-3 gap-2">
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'arte')}
-              >
-                <PaintBrushIcon className="h-5 w-5 text-black" />
-              </div>
-              <span className="text-xs text-black">Arte</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Relax')}
-              >
-                <PaperAirplaneIcon className="h-5 w-5 text-black" />
-              </div>
-              <span className="text-xs text-black">Relax</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Añadir')}
-              >
-                <PlusIcon className="h-5 w-5 text-black" />
-              </div>
-              <span className="text-xs text-black">Añadir</span>
-            </div>
+        <div>
+          <h3 className="m-0 text-sm font-roboto text-black">Actividad</h3>
+          <div className="flex justify-between items-center">
+            {actividades &&
+              actividades.map((actividad) => (
+                <div className="flex flex-col items-center" key={actividad.id}>
+                  <div
+                    className="bg-derby border border-solid border-primary p-4 rounded-md flex justify-center items-center cursor-pointer"
+                    onClick={() =>
+                      handleFilterChange("address", actividad.title)
+                    }
+                  >
+                    {actividad.icon}
+                  </div>
+                  <span className="text-xs font-light bg-primary text-white w-full text-center rounded mt-1">
+                    {actividad.title}
+                  </span>
+                </div>
+              ))}
+            <ControlPointIcon className="text-primary " />
           </div>
         </div>
-
 
         {/* Sección Tiempo */}
-        <div className="my-4">
-  <label className="font-roboto text-black mb-2">Distancia</label>
-  <input
-    type="range"
-    min={0}
-    max={20}
-    value={selectedFilters.distancia}
-    onChange={(e) => handleFilterChange('distancia', parseInt(e.target.value))}
-    className="w-full"
-  />
-  <div className="flex justify-between text-xs text-black">
-    <span>0 km</span>
-    <span>{selectedFilters.distancia} km</span>
-    <span>20 km</span>
-  </div>
-  </div>
-
-
-        <div className="my-4">
+        <div className="">
+          <label className="font-roboto text-black mb-2">Distancia</label>
+          <input
+            defaultValue={100}
+            type="range"
+            min={0}
+            max={200}
+            value={selectedFilters.distancia}
+            onChange={(e) =>
+              handleFilterChange("distancia", parseInt(e.target.value))
+            }
+            className="w-full accent-secondary"
+          />
+          <div className="flex justify-between text-xs text-black">
+            <span>0 km</span>
+            <span>{selectedFilters.distancia || "100"} km</span>
+            <span>200 km</span>
+          </div>
+        </div>
+            <button className="rounded text-white bg-primary border-0 p-3">Filtros premium</button>
+        <div className="">
           <label className="font-roboto text-blackred mb-2">Tiempo</label>
           <input
             type="range"
             min={0}
             max={24}
             value={selectedFilters.tiempo}
-            onChange={(e) => handleFilterChange('tiempo', parseInt(e.target.value))}
-            className="w-full"
+            onChange={(e) =>
+              handleFilterChange("tiempo", parseInt(e.target.value))
+            }
+            className="w-full accent-secondary"
           />
           <div className="flex justify-between text-xs text-blackred">
             <span>0 h</span>
@@ -140,79 +208,25 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
             <span>24 h</span>
           </div>
         </div>
-
-
-        {/* Sección Nombre */}
-        <div className="mb-4">
-          <label className="font-roboto text-blackred mb-2">Nombre</label>
-          <input
-            type="text"
-            value={selectedFilters.name}
-            onChange={(e) => handleFilterChange('name', e.target.value)}
-            className="w-full p-2 border font-roboto text-gray-950 mb-2 border-0 rounded-md"
-            placeholder="Buscar por nombre"
-          />
-        </div>
-
-       
-
-        {/* Sección Precio */}
-        <div className="mb-4">
-          <label className="font-roboto text-blackred">Precio</label>
-          <input
-            type="number"
-            value={selectedFilters.price}
-            onChange={(e) => handleFilterChange('price', e.target.value)}
-            className="w-full p-2 border font-roboto text-gray-950 border-0 rounded-md"
-            placeholder="Ingrese precio máximo"
-          />
-        </div>
-
-
-        <div className="mb-4">
-          <h3 className="font-roboto text-blackred">Traslado</h3>
-          <div className="grid grid-cols-3 gap-2">
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Bici')}
-              >
-                <RocketLaunchIcon className="h-5 w-5 text-blackred" />
-              </div>
-              <span className="text-xs text-blackred">Bici</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Playa')}
-              >
-                <TruckIcon className="h-5 w-5 text-blackred" />
-              </div>
-              <span className="text-xs text-blackred">Auto</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
-                onClick={() => handleFilterChange('address', 'Añadir')}
-              >
-                <PlusIcon className="h-5 w-5 text-blackred" />
-              </div>
-              <span className="text-xs text-blackred">Añadir</span>
-            </div>
+        <div>
+        <h3 className="m-0 text-sm font-roboto text-blackred">Espacio</h3>
+          <div className="flex justify-between items-center">
+            {traslados &&
+              traslados.map((traslado) => (
+                <div className="flex flex-col items-center" key={traslado.id}>
+                  <div
+                    className="bg-derby border border-solid border-primary p-4 rounded-md flex justify-center items-center cursor-pointer"
+                    onClick={() => handleFilterChange("address", traslado.title)}
+                  >
+                    {traslado.icon}
+                  </div>
+                  <span className="text-xs font-light bg-primary text-white w-full text-center rounded mt-1">
+                    {traslado.title}
+                  </span>
+                </div>
+              ))}
+            <ControlPointIcon className="text-primary " />
           </div>
-        </div>
-
-        
-
-
-
-        <div className="flex justify-end">
-          <button
-            onClick={applyFilters}
-            className="bg-primary text-blackred px-4 py-2 rounded-md border-0"
-          >
-            Aplicar
-          </button>
         </div>
       </div>
     </div>

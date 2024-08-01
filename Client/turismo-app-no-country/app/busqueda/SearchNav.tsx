@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import SearchFilter from "../Filtro/SearchFilter";
 import SearchBar from "../busqueda/SearchBar";
 import TuneIcon from "@mui/icons-material/Tune";
-import CancelIcon from "@mui/icons-material/Cancel";
+import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 
 const SearchNav: React.FC = () => {
   const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
@@ -30,10 +30,10 @@ const SearchNav: React.FC = () => {
       </button>
       {isFilterOpen && (
         <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-4 rounded shadow-lg relative">
+          <div className="relative w-11/12 md:w-1/2">
             <SearchFilter onFilter={handleFilter} onClose={toggleFilter} />
-            <CancelIcon
-              className="text-black absolute top-1 right-1 text-3xl"
+            <DisabledByDefaultIcon
+              className="text-primary absolute top-0 left-0 my-2 ml-4 text-xl"
               onClick={toggleFilter}
             />
           </div>
