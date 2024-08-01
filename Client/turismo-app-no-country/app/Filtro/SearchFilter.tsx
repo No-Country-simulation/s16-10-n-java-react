@@ -33,72 +33,72 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
 
   return (
     <div className="container mx-auto p-2">
-      <div className="bg-turbo p-2 rounded-md max-h-[80vh] overflow-auto">
+      <div className="bg-derby p-2 rounded-md max-h-[80vh] overflow-auto">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="font-roboto text-white">Filtros</h2>
+          <h2 className="font-roboto text-blackred">Filtros</h2>
         </div>
          {/* Sección Dirección */}
          <div className="mb-4">
-          <h3 className="font-roboto text-white">Espacio</h3>
+          <h3 className="font-roboto text-blackred">Espacio</h3>
           <div className="grid grid-cols-3 gap-2">
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Ciudad')}
               >
-                <BuildingOfficeIcon className="h-5 w-5 text-white" />
+                <BuildingOfficeIcon className="h-5 w-5 text-blackred" />
               </div>
-              <span className="text-xs text-white">Ciudad</span>
+              <span className="text-xs text-blackred">Ciudad</span>
             </div>
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Playa')}
               >
-                <SunIcon className="h-5 w-5 text-white" />
+                <SunIcon className="h-5 w-5 text-blackred" />
               </div>
-              <span className="text-xs text-white">Playa</span>
+              <span className="text-xs text-blackred">Playa</span>
             </div>
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Añadir')}
               >
-                <PlusIcon className="h-5 w-5 text-white" />
+                <PlusIcon className="h-5 w-5 text-blackred" />
               </div>
-              <span className="text-xs text-white">Añadir</span>
+              <span className="text-xs text-black">Añadir</span>
             </div>
           </div>
         </div>
         <div className="mb-4">
-          <h3 className="font-roboto text-white">Actividad</h3>
+          <h3 className="font-roboto text-black">Actividad</h3>
           <div className="grid grid-cols-3 gap-2">
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'arte')}
               >
-                <PaintBrushIcon className="h-5 w-5 text-white" />
+                <PaintBrushIcon className="h-5 w-5 text-black" />
               </div>
-              <span className="text-xs text-white">Arte</span>
+              <span className="text-xs text-black">Arte</span>
             </div>
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Relax')}
               >
-                <PaperAirplaneIcon className="h-5 w-5 text-white" />
+                <PaperAirplaneIcon className="h-5 w-5 text-black" />
               </div>
-              <span className="text-xs text-white">Relax</span>
+              <span className="text-xs text-black">Relax</span>
             </div>
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Añadir')}
               >
-                <PlusIcon className="h-5 w-5 text-white" />
+                <PlusIcon className="h-5 w-5 text-black" />
               </div>
-              <span className="text-xs text-white">Añadir</span>
+              <span className="text-xs text-black">Añadir</span>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
 
         {/* Sección Tiempo */}
         <div className="my-4">
-  <label className="font-roboto text-white mb-2">Distancia</label>
+  <label className="font-roboto text-black mb-2">Distancia</label>
   <input
     type="range"
     min={0}
@@ -115,7 +115,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
     onChange={(e) => handleFilterChange('distancia', parseInt(e.target.value))}
     className="w-full"
   />
-  <div className="flex justify-between text-xs text-white">
+  <div className="flex justify-between text-xs text-black">
     <span>0 km</span>
     <span>{selectedFilters.distancia} km</span>
     <span>20 km</span>
@@ -124,7 +124,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
 
 
         <div className="my-4">
-          <label className="font-roboto text-white mb-2">Tiempo</label>
+          <label className="font-roboto text-blackred mb-2">Tiempo</label>
           <input
             type="range"
             min={0}
@@ -133,7 +133,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
             onChange={(e) => handleFilterChange('tiempo', parseInt(e.target.value))}
             className="w-full"
           />
-          <div className="flex justify-between text-xs text-white">
+          <div className="flex justify-between text-xs text-blackred">
             <span>0 h</span>
             <span>{selectedFilters.tiempo} h</span>
             <span>24 h</span>
@@ -143,7 +143,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
 
         {/* Sección Nombre */}
         <div className="mb-4">
-          <label className="font-roboto text-white mb-2">Nombre</label>
+          <label className="font-roboto text-blackred mb-2">Nombre</label>
           <input
             type="text"
             value={selectedFilters.name}
@@ -157,7 +157,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
 
         {/* Sección Precio */}
         <div className="mb-4">
-          <label className="font-roboto text-white">Precio</label>
+          <label className="font-roboto text-blackred">Precio</label>
           <input
             type="number"
             value={selectedFilters.price}
@@ -169,34 +169,34 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
 
 
         <div className="mb-4">
-          <h3 className="font-roboto text-white">Traslado</h3>
+          <h3 className="font-roboto text-blackred">Traslado</h3>
           <div className="grid grid-cols-3 gap-2">
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Bici')}
               >
-                <RocketLaunchIcon className="h-5 w-5 text-white" />
+                <RocketLaunchIcon className="h-5 w-5 text-blackred" />
               </div>
-              <span className="text-xs text-white">Bici</span>
+              <span className="text-xs text-blackred">Bici</span>
             </div>
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Playa')}
               >
-                <TruckIcon className="h-5 w-5 text-white" />
+                <TruckIcon className="h-5 w-5 text-blackred" />
               </div>
-              <span className="text-xs text-white">Auto</span>
+              <span className="text-xs text-blackred">Auto</span>
             </div>
             <div className="flex flex-col items-center">
               <div
                 className="bg-primary p-1 rounded-md flex justify-center items-center w-10 h-10 cursor-pointer"
                 onClick={() => handleFilterChange('address', 'Añadir')}
               >
-                <PlusIcon className="h-5 w-5 text-white" />
+                <PlusIcon className="h-5 w-5 text-blackred" />
               </div>
-              <span className="text-xs text-white">Añadir</span>
+              <span className="text-xs text-blackred">Añadir</span>
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
         <div className="flex justify-end">
           <button
             onClick={applyFilters}
-            className="bg-primary text-white px-4 py-2 rounded-md border-0"
+            className="bg-primary text-blackred px-4 py-2 rounded-md border-0"
           >
             Aplicar
           </button>

@@ -17,7 +17,7 @@ const SearchNav: React.FC = () => {
     };
 
     return (
-        <div className="relative flex-row place-self-center  justify-center hidden sm:hidden">
+        <div className="relative flex-row place-self-center  justify-center  z-50">
             <SearchBar onSearch={(query) => console.log(query)} />
             <button
                 onClick={toggleFilter}
@@ -64,9 +64,9 @@ const SearchNav: React.FC = () => {
                         />
                         <button
                             onClick={toggleFilter}
-                            className="absolute top-2 right-2 p-2 bg-red-500 text-white rounded"
+                            className="absolute top-2 right-2 p-2  text-white rounded"
                         >
-                            Close
+                            X
                         </button>
                     </div>
                 </div>
