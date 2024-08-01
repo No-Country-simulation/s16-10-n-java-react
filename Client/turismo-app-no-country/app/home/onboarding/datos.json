@@ -5,25 +5,29 @@
       "title": "Aventura y actividad al aire libre",
       "src": "/images/onboarding/pregunta-1/aventura.jpeg",
       "value": "option1"
-    },
+,
+"icon": ""    },
     {
       "id": 2,
       "title": "Cultura e historia",
       "src": "/images/onboarding/pregunta-1/cultura.jpeg",
       "value": "option2"
-    },
+,
+"icon": ""    },
     {
       "id": 3,
       "title": "Relajación y bienestar",
       "src": "/images/onboarding/pregunta-1/relajacion.jpeg",
       "value": "option3"
-    },
+,
+"icon": ""    },
     {
       "id": 4,
       "title": "Gastronomía y vida nocturna",
       "src": "/images/onboarding/pregunta-1/vida_nocturna.jpeg",
       "value": "option4"
-    }
+,
+"icon": ""    }
   ],
   [
     {
@@ -31,25 +35,29 @@
       "title": "Descubrir lugares escondidos y menos turísticos",
       "src": "/images/onboarding/pregunta-2/1_descubrir.jpeg",
       "value": "option5"
-    },
+,
+"icon": ""    },
     {
       "id": 6,
       "title": "Participar en eventos y festivales locales",
       "src": "/images/onboarding/pregunta-2/2_festival.jpeg",
       "value": "option6"
-    },
+,
+"icon": ""    },
     {
       "id": 7,
       "title": "Conectar con la cultura local y sus habitantes",
       "src": "/images/onboarding/pregunta-2/3_cultura.jpeg",
       "value": "option7"
-    },
+,
+"icon": ""    },
     {
       "id": 8,
       "title": "Relajar y desconectar del estrés diario",
       "src": "/images/onboarding/pregunta-2/4_relajar.webp",
       "value": "option8"
-    }
+,
+"icon": ""    }
   ],
   [
     {
@@ -57,24 +65,28 @@
       "title": "Pueblos autóctonos",
       "src": "/images/onboarding/pregunta-3/1_pueblo.jpeg",
       "value": "option9"
-    },
+,
+"icon": ""    },
     {
       "id": 10,
       "title": "Ciudades cosmopolitanas",
       "src": "/images/onboarding/pregunta-3/2_cosmopolitana.jpeg",
-      "value": "option10"
+      "value": "option10",
+      "icon": ""
     },
     {
       "id": 11,
       "title": "Espacios rodeados de naturaleza",
       "src": "/images/onboarding/pregunta-3/3_naturaleza.jpeg",
-      "value": "option11"
+      "value": "option11",
+      "icon": ""
     },
     {
       "id": 12,
       "title": "Una combinación de todos",
       "src": "/images/onboarding/pregunta-3/4_combinaciones.jpeg",
-      "value": "option12"
+      "value": "option12",
+      "icon": ""
     }
   ],
   [
@@ -82,103 +94,119 @@
       "id": 13,
       "title": "Senderismo y trekking",
       "src": "/images/onboarding/pregunta-4/1_treakking.jpeg",
-      "value": "option13"
+      "value": "option13",
+      "icon": ""
     },
     {
       "id": 14,
       "title": "Visitas al museo y sitiosn históricos",
       "src": "/images/onboarding/pregunta-4/2_museo.webp",
-      "value": "option14"
+      "value": "option14",
+      "icon": ""
     },
     {
       "id": 15,
       "title": "Vida nocturna y entretenimiento",
       "src": "/images/onboarding/pregunta-4/3_entretenimiento.jpeg",
-      "value": "option15"
+      "value": "option15",
+      "icon": ""
     },
     {
       "id": 16,
       "title": "Actividades gastronómicas",
       "src": "/images/onboarding/pregunta-4/4_gastronomia.webp",
-      "value": "option16"
+      "value": "option16",
+      "icon": ""
     }
   ],
   [
     {
       "id": 17,
       "title": "Muy importante, me gusta participar",
-      "src": "/images/onboarding/pregunta-5/1_muy-importante.png",
-      "value": "option17"
+      "src": "",
+      "value": "option17",
+      "icon" : "🤩"
     },
     {
       "id": 18,
       "title": "Algo importante, no es crucial",
-      "src": "/images/onboarding/pregunta-5/2_importante.png",
-      "value": "option18"
+      "src": "",
+      "value": "option18",
+      "icon" : "😀"
     },
     {
       "id": 19,
       "title": "Poco importante, prefiero otras cosas",
-      "src": "/images/onboarding/pregunta-5/3_no-muy-importante.png",
-      "value": "option19"
+      "src": "",
+      "value": "option19",
+      "icon" : "🤔"
     },
     {
       "id": 20,
       "title": "Poco importante, no me interesa",
-      "src": "/images/onboarding/pregunta-5/4_no-importante.png",
-      "value": "option20"
+      "src": "",
+      "value": "option20",
+      "icon" : "😐"
     }
   ],
   [
     {
       "id": 21,
       "title": "Pronóstico diario para planificar actividades",
-      "src": "/images/onboarding/pregunta-6/1_planificar.png",
-      "value": "option21"
+      "src": "",
+      "value": "option21",
+      "icon" : "📅"
     },
     {
       "id": 22,
       "title": "Alertas de cambios bruscos de clima",
-      "src": "/images/onboarding/pregunta-6/2_alerta.png",
-      "value": "option22"
+      "src":"",
+      "value": "option22",
+      "icon" : "⚠"
     },
     {
       "id": 23,
-      "title": "Recomendaciones sobre qué llevar segn el clima",
-      "src": "/images/onboarding/pregunta-6/3_recomendaciones.png",
-      "value": "option23"
+      "title": "Recomendaciones sobre qué llevar según el clima",
+      "src": "",
+      "value": "option23",
+      "icon" : "☔"
     },
     {
       "id": 24,
       "title": "No necesito información sobre el clima",
-      "src": "/images/onboarding/pregunta-6/4_no-interesa.png",
-      "value": "option24"
+      "src": "",
+      "value": "option24",
+      "icon" : "🙅‍♀️"
     }
   ],
   [
     {
       "id": 25,
       "title": "Basadas en mis intereses y preferencias",
-      "src": "/images/onboarding/pregunta-7/1_preferencias.png",
-      "value": "option25"
+      "src": "",
+      "value": "option25",
+      "icon" : "💖"
     },
     {
       "id": 26,
       "title": "Basadas en las recomendaciones de otros usuarios",
-      "src": "/images/onboarding/pregunta-7/2_recomendaciones.png",
-      "value": "option26"
+      "src": "",
+      "value": "option26",
+      "icon" : "💁‍♂️"
     },
     {
       "id": 27,
       "title": "Basadas en la popularidad de los lugares",
-      "src": "/images/onboarding/pregunta-7/3_popularidad.png",
-      "value": "option27"
+      "src": "",
+      "value": "option27",
+      "icon" : "🥇"
     },
     {
       "id": 28,
       "title": "No necesito recomendaciones, prefiero planificar por mi cuenta",
-      "src": "/images/onboarding/pregunta-7/4_no-necesito.png",
-      "value": "option28"
+      "src": "",
+      "value": "option28",
+      "icon" : "🙅"
     }
   ]
 ]
