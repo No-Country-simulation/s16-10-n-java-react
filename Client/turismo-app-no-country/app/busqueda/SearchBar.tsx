@@ -22,7 +22,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       />
       <button
         type="submit"
-        className="bg-apple border-0 cursor-pointer">
+        className="bg-secondary border-0 cursor-pointer">
         <SearchIcon className='text-white'/>
       </button>
     </div>

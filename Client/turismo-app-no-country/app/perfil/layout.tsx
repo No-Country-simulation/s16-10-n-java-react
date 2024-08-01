@@ -4,7 +4,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useRouter } from "next/navigation";
 
-const layoutPerfil = ({ children }: { children: React.ReactNode }) => {
+const LayoutPerfil = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
 
   const handleRedirect = () => {
@@ -29,4 +29,4 @@ const layoutPerfil = ({ children }: { children: React.ReactNode }) => {
     </div>
   );
 };
-export default layoutPerfil;
+export default LayoutPerfil;

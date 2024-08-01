@@ -16,7 +16,7 @@ interface Product {
 }
 
 interface ProductCardProps {
-  product: Product;
+  product: any;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
