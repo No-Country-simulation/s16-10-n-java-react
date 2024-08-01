@@ -1,6 +1,7 @@
 import React from "react";
 import AddIcon from "@mui/icons-material/Add";
 import Link from "next/link";
+import Image from "next/image";
 
 const Perfil = () => {
   const rutas = [
@@ -40,18 +41,20 @@ const Perfil = () => {
     },
     {
       id: 2,
-      name: "Nombre carpeta",
+      name: "CABA (Arg)",
+      src: "/images/carpetas_perfil/obelisco.jpg"
     },
     {
       id: 3,
-      name: "Nombre carpeta",
+      name: "Córdoba (Arg) ",
+      src: "/images/carpetas_perfil/cordoba.jpg"
     },
   ];
 
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-9 lg:gap-14 mt-4 sm:mt-9 lg:mt-14 max-w-[1400px] mx-auto sm:px-2">
       <section className="bg-derby flex flex-col items-center justify-center w-4/6 lg:w-full rounded">
-        <h4 className="text-secondary m-5 lg:m-8 text-lg lg:text-2xl ">
+        <h4 className="text-primary m-5 lg:m-8 text-lg lg:text-2xl ">
           Bienvenido *****!
         </h4>
         <ul className="list-none font-extralight text-sm p-0 m-0 text-center w-full">
@@ -59,11 +62,11 @@ const Perfil = () => {
             rutas.map((ruta) => (
               <li
                 key={ruta.id}
-                className="py-4 text-primary hover:text-secondary hover:bg-yellowOrange shadow-md"
+                className="py-4 text-secondary hover:text-derby hover:bg-yellowOrange shadow-md"
               >
                 <Link
                   href={`/perfil/${ruta.href}`}
-                  className="font-bold no-underline text-inherit text-base"
+                  className="font-medium no-underline text-inherit text-base"
                 >
                   {ruta.title}
                 </Link>
@@ -80,12 +83,22 @@ const Perfil = () => {
         <div className="flex w-full justify-around mt-3">
           {carpetas &&
             carpetas.map((carpeta, index) => (
-              <div key={carpeta.id}>
-                <div className="w-24 h-24 bg-derby rounded flex justify-center items-center cursor-pointer">
-                  {index === 0 && (
-                    <AddIcon className="text-6xl text-primary hover:scale-110" />
+              <div key={carpeta.id} className="flex flex-col">
+                
+                  {index === 0 ? (
+                    <div className="w-24 h-24 bg-gray-200 border border-solid border-primary rounded flex justify-center items-center cursor-pointer shadow-md">
+                      <AddIcon className="text-6xl text-primary hover:scale-110" />
+                    </div>
+                  ) : (
+
+                    <Image 
+                        width={96}
+                        height={96}
+                        src={carpeta.src}
+                        className="border border-solid border-primary rounded cursor-pointer shadow-md"
+    
+                      />
                   )}
-                </div>
                 <h6 className="m-0 text-xs font-normal text-center mt-1 text-secondary">
                   {carpeta.name}
                 </h6>
