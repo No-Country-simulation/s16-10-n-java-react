@@ -110,10 +110,11 @@ const SearchPage: React.FC = () => {
               <SearchFilter onFilter={handleFilter} onClose={toggleFilter} />
               <button 
                 onClick={toggleFilter} 
-                className="absolute top-2 right-2 p-2 bg-red-500 text-white rounded"
+                className="absolute top-2 border-0 right-2 p-2 bg-primary text-white rounded-full"
               >
                 Close
               </button>
+              
             </div>
           </div>
         )}
