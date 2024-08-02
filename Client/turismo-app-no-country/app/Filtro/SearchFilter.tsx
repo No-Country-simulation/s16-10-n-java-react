@@ -13,16 +13,7 @@ import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
-
-import {
-  BuildingOfficeIcon,
-  SunIcon,
-  PlusIcon,
-  PaperAirplaneIcon,
-  PaintBrushIcon,
-  RocketLaunchIcon,
-  TruckIcon,
-} from "@heroicons/react/24/outline";
+import CardFilter from "../_ui/CardFilter";
 
 interface SearchFilterProps {
   onFilter: (filters: {
@@ -35,7 +26,7 @@ interface SearchFilterProps {
 }
 
 const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
-  const espacios = [
+  const spaces = [
     {
       id: 1,
       icon: <LocationCityIcon />,
@@ -58,7 +49,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
     },
   ];
 
-  const actividades = [
+  const activities = [
     {
       id: 1,
       icon: <PaletteIcon />,
@@ -81,7 +72,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
     },
   ];
 
-  const traslados = [
+  const relocations = [
     {
       id: 1,
       icon: <DirectionsWalkIcon />,
@@ -129,19 +120,9 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
         <div className="">
           <h3 className="m-0 text-sm font-roboto text-blackred">Espacio</h3>
           <div className="flex justify-between items-center">
-            {espacios &&
-              espacios.map((espacio) => (
-                <div className="flex flex-col items-center" key={espacio.id}>
-                  <div
-                    className="bg-derby border border-solid border-primary p-4 rounded-md flex justify-center items-center cursor-pointer"
-                    onClick={() => handleFilterChange("address", espacio.title)}
-                  >
-                    {espacio.icon}
-                  </div>
-                  <span className="text-xs font-light bg-primary text-white w-full text-center rounded mt-1">
-                    {espacio.title}
-                  </span>
-                </div>
+            {spaces &&
+              spaces.map((space) => (
+                <CardFilter card={space} handleFilterChange={handleFilterChange}/>
               ))}
             <ControlPointIcon className="text-primary cursor-pointer" />
           </div>
@@ -149,21 +130,9 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
         <div>
           <h3 className="m-0 text-sm font-roboto text-black">Actividad</h3>
           <div className="flex justify-between items-center">
-            {actividades &&
-              actividades.map((actividad) => (
-                <div className="flex flex-col items-center" key={actividad.id}>
-                  <div
-                    className="bg-derby border border-solid border-primary p-4 rounded-md flex justify-center items-center cursor-pointer"
-                    onClick={() =>
-                      handleFilterChange("address", actividad.title)
-                    }
-                  >
-                    {actividad.icon}
-                  </div>
-                  <span className="text-xs font-light bg-primary text-white w-full text-center rounded mt-1">
-                    {actividad.title}
-                  </span>
-                </div>
+            {activities &&
+              activities.map((activity) => (
+                <CardFilter card={activity} handleFilterChange={handleFilterChange}/>
               ))}
             <ControlPointIcon className="text-primary cursor-pointer" />
           </div>
@@ -211,19 +180,9 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
         <div>
         <h3 className="m-0 text-sm font-roboto text-blackred">Espacio</h3>
           <div className="flex justify-between items-center">
-            {traslados &&
-              traslados.map((traslado) => (
-                <div className="flex flex-col items-center" key={traslado.id}>
-                  <div
-                    className="bg-derby border border-solid border-primary p-4 rounded-md flex justify-center items-center cursor-pointer"
-                    onClick={() => handleFilterChange("address", traslado.title)}
-                  >
-                    {traslado.icon}
-                  </div>
-                  <span className="text-xs font-light bg-primary text-white w-full text-center rounded mt-1">
-                    {traslado.title}
-                  </span>
-                </div>
+            {relocations &&
+              relocations.map((relocation) => (
+                <CardFilter card={relocation} handleFilterChange={handleFilterChange}/>
               ))}
             <ControlPointIcon className="text-primary cursor-pointer" />
           </div>

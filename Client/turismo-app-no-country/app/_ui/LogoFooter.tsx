@@ -14,13 +14,13 @@ const LogoFooter = () => {
           <path
             d="M10.2284 24.9999L5.36115 19.1592"
             stroke="#FF8A00"
-            stroke-linecap="round"
-            stroke-dasharray="2 2"
+            strokeLinecap="round"
+            strokeDasharray="2 2"
           />
           <path
             d="M1.954 12.8324C-0.966293 -4.69027 25.0735 -2.01327 16.5558 15.9955C15.4201 18.1046 12.5647 22.8584 10.2284 25"
             stroke="#FF8A00"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <circle cx="9.74165" cy="9.66804" r="4.86726" fill="#206F1E" />
           <circle
@@ -29,7 +29,7 @@ const LogoFooter = () => {
             r="0.966814"
             fill="#206F1E"
             stroke="#FF8A00"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
         </g>
         <defs>
@@ -40,9 +40,9 @@ const LogoFooter = () => {
             width="19.5515"
             height="27"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
