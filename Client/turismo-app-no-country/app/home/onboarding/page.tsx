@@ -40,9 +40,9 @@ const Page = () => {
   const { step } = useFormState();
 
   return (
-    <section className="min-h-screen flex justify-center items-center font-roboto max-w-[1040px] mx-auto">
+    <section className="min-h-full flex justify-center items-center font-roboto max-w-[1040px] mx-auto">
       {step !== 7 ? (
-        <div className=" bg-[url('/bg-secondary-onboarding.svg')] bg-no-repeat bg-cover w-5/6 rounded-xl min-h-[590px] relative">
+        <div className="w-5/6 rounded-xl min-h-[590px] relative">
           <div className="bg-[url('/bg-onboarding.svg')] bg-no-repeat bg-cover w-full min-h-[590px] rounded-xl flex items-center justify-center ">
             <ActiveStepFormComponent />
           </div>
