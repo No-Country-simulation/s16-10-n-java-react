@@ -38,6 +38,7 @@ const Perfil = () => {
     {
       id: 1,
       name: "Nombre carpeta",
+      src: ""
     },
     {
       id: 2,
@@ -96,6 +97,7 @@ const Perfil = () => {
                         height={96}
                         src={carpeta.src}
                         className="border border-solid border-primary rounded cursor-pointer shadow-md"
+                        alt=""
     
                       />
                   )}

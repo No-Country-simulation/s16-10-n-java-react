@@ -21,10 +21,11 @@ const LocationTracker: React.FC = () => {
           { enableHighAccuracy: true }
         );
       } else {
-        setError({
-          code: 0,
-          message: 'Geolocation is not supported by this browser.'
-        });
+        // setError({
+        //   code: 0,
+        //   message: 'Geolocation is not supported by this browser.'
+        // });
+        console.error('Geolocation is not supported by this browser.');
       }
     }
 

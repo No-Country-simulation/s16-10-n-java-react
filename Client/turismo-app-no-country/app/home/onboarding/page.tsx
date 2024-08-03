@@ -36,7 +36,7 @@ function ActiveStepFormComponent() {
   }
 }
 
-const page = () => {
+const Page = () => {
   const { step } = useFormState();
 
   return (
@@ -55,4 +55,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

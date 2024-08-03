@@ -16,12 +16,7 @@ import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import CardFilter from "../_ui/CardFilter";
 
 interface SearchFilterProps {
-  onFilter: (filters: {
-    name?: string;
-    address?: string;
-    price?: string;
-    tiempo?: number;
-  }) => void;
+  onFilter: (key:any) => void;
   onClose: () => void;
 }
 
@@ -100,6 +95,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilter, onClose }) => {
     address: "",
     price: "",
     tiempo: 0,
+    distancia: 0,
   });
 
   const handleFilterChange = (key: string, value: string | number) => {

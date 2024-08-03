@@ -10,20 +10,22 @@ import SearchFilter from '../Filtro/SearchFilter';
 interface Product {
   id: number;
   name: string;
-  href: string;
+  href?: string;
   reach: string;
   imageSrc: string;
   imageAlt: string;
   price: string;
-  color: string;
-  coordinates: [number, number];
+  color?: string;
+  coordinates: number[];
   address: string;
+  Temporada: string;
 }
+
 
 const SearchPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(products);
-  const [filters, setFilters] = useState({
+  const [filters, setFilters] = useState<any>({
     reach: '',
     price: '',
     color: '',
@@ -62,11 +64,7 @@ const SearchPage: React.FC = () => {
       );
     }
 
-    if (filters.color) {
-      updatedProducts = updatedProducts.filter(product =>
-        product.color.toLowerCase().includes(filters.color.toLowerCase())
-      );
-    }
+   
 
     if (filters.address) {
       updatedProducts = updatedProducts.filter(product =>
