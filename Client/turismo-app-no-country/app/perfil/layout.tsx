@@ -12,7 +12,7 @@ const layoutPerfil = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-full">
       <section className="bg-derby flex flex-col items-center justify-center py-2 relative">
         <ArrowBackIosIcon onClick={handleRedirect} className="text-2xl absolute top-0 left-0 mt-6 ml-6 text-secondary cursor-pointer"/>
         <div className="relative">

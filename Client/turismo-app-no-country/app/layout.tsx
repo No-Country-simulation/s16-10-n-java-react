@@ -25,7 +25,7 @@ export default function RootLayout({
     return (
         <html id="__next" lang="en">
             <CssBaseline/>
-            <body className={`${roboto.className} ${roboto.variable}`}>
+            <body className={`${roboto.className} ${roboto.variable} pt-[64px] md:pt-[72px] min-h-screen`}>
                 <Header />
                 {children}
                 <Footer />

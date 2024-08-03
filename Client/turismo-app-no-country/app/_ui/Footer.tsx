@@ -7,7 +7,7 @@ import LogoFooter from "./LogoFooter";
 
 const Footer = () => {
   return (
-    <div>
+    <footer className="mt-4">
     <span className="block w-3/4 h-[1px] bg-secondary mx-auto"></span>
       <div className="mt-10 flex flex-col gap-6 justify-center items-center pb-4">
         <h4 className="m-0 text-base font-semibold">¡Recibe novedades!</h4>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

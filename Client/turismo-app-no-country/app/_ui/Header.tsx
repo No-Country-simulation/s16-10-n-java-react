@@ -30,7 +30,7 @@ const headerNavLinks = [
 const Header = () => {
     return (
         <>
-            <nav>
+            <nav className='fixed top-0 left-0 z-50 w-full bg-white'>
                 <div className="flex flex-row mx-4 justify-between items-center">
                     <MobileNav navList={headerNavLinks} />
                     <div className="hidden md:flex">
