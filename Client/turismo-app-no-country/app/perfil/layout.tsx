@@ -8,7 +8,7 @@ const LayoutPerfil = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
 
   const handleRedirect = () => {
-    router.push("/perfil");
+    router.back();
   };
 
   return (
