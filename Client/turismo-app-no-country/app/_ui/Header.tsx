@@ -56,7 +56,7 @@ const Header = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 z-50 w-full bg-white transition-[top] duration-300 ${
+        className={`fixed left-0 z-50 w-full bg-white transition-[top] duration-300 ${
           showNavBar ? "top-0" : "-top-[64px] md:-top-[72px]"
         }`}
       >
