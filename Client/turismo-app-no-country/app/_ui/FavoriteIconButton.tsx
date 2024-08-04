@@ -20,9 +20,9 @@ export const FavoriteIconButton = ({ id }: { id?: number }) => {
             onClick={handleClick}
         >
             {isFavorite ? (
-                <TurnedInIcon className="text-4xl m-0" />
+                <TurnedInIcon className="text-2xl sm:text-4xl m-0" />
             ) : (
-                <TurnedInNotIcon className="text-4xl m-0" />
+                <TurnedInNotIcon className="text-2xl sm:text-4xl m-0" />
             )}
         </IconButton>
     );

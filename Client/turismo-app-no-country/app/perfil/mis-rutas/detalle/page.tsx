@@ -1,6 +1,7 @@
 import React from "react";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { FavoriteIconButton } from "@/app/_ui/FavoriteIconButton";
 
 const CarpetaRuta = () => {
   const rutas = [
@@ -77,7 +78,8 @@ const CarpetaRuta = () => {
       <div className="flex flex-wrap justify-center items-center mt-3 lg:mt-12 gap-2 sm:gap-6 lg:gap-10">
         {rutas &&
           rutas.map((ruta) => (
-            <div key={ruta.id}>
+            <div key={ruta.id} className="relative">
+              <FavoriteIconButton/>
               <div className="w-80 h-16 lg:w-96 sm:h-20 lg:h-24 rounded-t-lg">
                 <img
                   src={ruta.src}
