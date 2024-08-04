@@ -9,6 +9,7 @@ import {
 import data from '../data/data';
 
 import { useRouter } from 'next/navigation';
+import useTextShortener from '../hooks/useTextShortener';
 
 interface RouteCardProps {
     route: any;
@@ -37,7 +38,7 @@ const RouteCard: React.FC<RouteCardProps> = ({ route }) => {
                 />
                 <CardContent>
                     <p className="font-roboto text-base m-0">
-                        {`${route.title} (${route.distance})`}
+                        {`${useTextShortener((`${route.title} ${route.distance}`), 15)}`}
                     </p>
                     <Rating name="read-only" value={route.value} readOnly />
                 </CardContent>
