@@ -21,7 +21,7 @@ const page = async ({ params }: { params: { routeid: number } }) => {
 
     return (
         <>
-            <div className="flex flex-col items-center h-full">
+            <div className="flex flex-col items-center">
                 <div className="flex flex-col items-center w-full max-w-[1400px] h-full px-7">
                     <div className="flex flex-col justify-center items-start w-full">
                         <div className="flex justify-start items-center gap-x-2">
