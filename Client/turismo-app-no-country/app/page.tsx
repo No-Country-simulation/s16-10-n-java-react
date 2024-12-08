@@ -1,16 +1,28 @@
 import { Button } from '@mui/material';
 
-export default function Home() {
+async function getData() {
+    const res = await fetch('https://s16-10-n-java-react-522u.onrender.com/api/v1/routes');
+    // The return value is *not* serialized
+    // You can return Date, Map, Set, etc.
+
+    if (!res.ok) {
+        // This will activate the closest `error.js` Error Boundary
+        throw new Error('Failed to fetch data');
+    }
+
+    return res.json();
+}
+
+export default async function Home() {
+    const data = await getData();
+    console.log(data);
+
     return (
         <main>
-            <div className='flex flex-col justify-between items-center  m-5'>
-                <h1>Nuevo proyecto</h1>
+            <div className="flex flex-col justify-between items-center  m-5">
+                <h1>{data[0].routeName}</h1>
                 <p className="text-blue-400">Este es un proyecto de turismo</p>
-                <Button
-                    variant="contained"
-                   
-                    className="bg-primary"
-                >
+                <Button variant="contained" className="bg-primary">
                     Hola mundo desde MUI
                 </Button>
             </div>
